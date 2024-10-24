@@ -6,6 +6,12 @@
   } ,
 
   {
+    "title"    : "主题设置",
+    "tags"     : "",
+    "url"      : "/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html"
+  } ,
+
+  {
     "title"    : "Test en",
     "tags"     : "mathjax",
     "url"      : "/test/test-en.html"

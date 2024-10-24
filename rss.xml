@@ -5,8 +5,8 @@
     <description>个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。</description>
     <link>https://h2o-ac.pages.dev//</link>
     <atom:link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 24 Oct 2024 05:45:07 +0000</pubDate>
-    <lastBuildDate>Thu, 24 Oct 2024 05:45:07 +0000</lastBuildDate>
+    <pubDate>Thu, 24 Oct 2024 06:40:07 +0000</pubDate>
+    <lastBuildDate>Thu, 24 Oct 2024 06:40:07 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -329,6 +329,18 @@ git remote add origin 仓库地址
         <pubDate>Thu, 24 Oct 2024 05:20:39 +0000</pubDate>
         <link>https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html</link>
         <guid isPermaLink="true">https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>主题设置</title>
+        <description>&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 24 Oct 2024 00:00:00 +0000</pubDate>
+        <link>https://h2o-ac.pages.dev/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html</link>
+        <guid isPermaLink="true">https://h2o-ac.pages.dev/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html</guid>
         
         
       </item>
