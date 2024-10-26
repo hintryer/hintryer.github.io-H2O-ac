@@ -1,2 +1,2122 @@
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code
+
+<!DOCTYPE html>
+<html lang="zh-Hans">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2O-ac主题设置 - Mr Li</title>
+    <meta name="author" content="zhonger">
+    
+    <meta name="description" content="H2O-ac主题设置">
+    <meta name="keywords"
+        content="H2O-ac主题">
+    
+    
+    <meta property="og:next_url" content="/git%E6%80%BB%E7%BB%93.html">
+    
+    
+    <meta property="post-date-format" content="0">
+    
+    <meta property="post-date" content="2024-10-26 00:00:00 +0000" />
+    
+    
+    <meta property="calendar-scale" content="year" />
+    <meta property="calendar-scheme" content="null" />
+    <meta property="calendar-color" content="null" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="H2O-ac主题设置 - Mr Li">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://h2o-ac.pages.dev/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html">
+    <meta property="og:baseurl" content="">
+    <meta property="og:description" content="个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。">
+    <meta property="og:site_name" content="Mr Li">
+    <meta property="og:gray" content="false">
+    <meta property="og:lang" content="zh-Hans">
+    
+    <meta name="alivestart" content="12/23/2021">
+    
+    
+    <meta name="theme-color" content="#81BBFF" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/assets/img/touch/apple-touch-icon.png" />
+    <link rel="Shortcut Icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.min.css" async>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown-light.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.min.css" />
+    
+    
+
+
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css" />
+
+
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/plugins/line-numbers/prism-line-numbers.min.css">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.css" />
+
+
+    
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+</head>
+    
+    <body class="line-numbers" ontouchstart="">
+    
+    <!--[if lt IE 10]>
+    <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+    <![endif]-->
+        
+        
+        <div id="all" class="post" data-theme="default">
+        
+            
+            
+            <div class="alert-tip" id="no-previous">已经是最新一篇文章了！</div>
+            <div class="alert-tip" id="no-next">已经是最后一篇文章了！</div>
+        
+            <input id="nm-switch" type="hidden" value="false">
+            <header class="g-header" data-theme="default">
+    <div class="g-logo">
+      <a href="/" aria-label="logo"></a>
+    </div>
+    <!-- <i id="menu-toggle" class="iconfont icon-menu"></i> -->
+    
+    
+    <div id="travelling-toggle">
+        <a href="https://www.travellings.cn/go.html" aria-label="Travelings" target="_blank">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-train-subway"></use>
+            </svg>
+        </a>
+    </div>
+    
+    <div id="mode-toggle">
+        <svg class="icon icon-day" aria-hidden="true">
+            <use xlink:href="#icon-day"></use>
+        </svg>
+        <svg class="icon icon-night" aria-hidden="true">
+            <use xlink:href="#icon-night"></use>
+        </svg>
+    </div>
+    <svg id="menu-toggle" class="icon-menu" aria-hidden="true">
+        <use xlink:href="#icon-menu"></use>
+    </svg>
+    <nav class="g-nav">
+        <ul>
+            
+                
+                <li>
+                    <a href="/" aria-label="home">
+                        home
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/blog/index.html" aria-label="blog">
+                        blog
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/archives.html" aria-label="archives">
+                        archives
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a href="/tags.html" aria-label="tags">
+                        tags
+                    </a>
+                </li>
+                
+            
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#"> about </a>
+                    <ul class="dropdown-menu">
+                    
+                        <li>
+                            <a href="/logs.html" aria-label="logs">
+                                logs
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/tos.html" aria-label="tos">
+                                tos
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/feed.xml" aria-label="RSS">
+                                RSS
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/cv.html" aria-label="CV">
+                                CV
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/links.html" aria-label="links">
+                                links
+                            </a>
+                        </li>
+                    
+                    </ul> 
+                </li>
+                
+            
+            
+            <li class="travelling">
+                <a href="https://www.travellings.cn/go.html" aria-label="Travelings" target="_blank">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-train-subway"></use>
+                    </svg>
+                </a>
+            </li>
+            
+            <li class="mode">
+                <svg class="icon day" aria-hidden="true">
+                    <use xlink:href="#icon-day"></use>
+                </svg>
+                <svg class="icon night" aria-hidden="true">
+                    <use xlink:href="#icon-night"></use>
+                </svg>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+
+            
+
+
+<div class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+    data-theme="default">
+    <div class="post-wrapper">
+        <div class="post-tags">
+            
+            
+            <a href="/%20/tags.html#H2O-ac%E4%B8%BB%E9%A2%98" class="post-tag">H2O-ac主题</a>
+            
+            
+        </div>
+        <h1>H2O-ac主题设置</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-user"></use>
+                </svg>
+                zhonger
+            </span>
+            <time class="post-meta-item" datetime=" 24-10-26">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-calendar"></use>
+                </svg>
+                <span class="create-at"></span>
+            </time>
+            <time class="post-meta-item" datetime=" 24-10-26">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-update"></use>
+                </svg>
+                <span class="update-at"></span>
+            </time>
+            <span class="post-meta-item">
+                <svg class="icon words" aria-hidden="true">
+                    <use xlink:href="#icon-words"></use>
+                </svg>
+                
+                本文总共  62.0k  字 </span>
+                    <span class="post-meta-item">
+                        <svg class="icon time" aria-hidden="true">
+                            <use xlink:href="#icon-time"></use>
+                        </svg>
+                        阅读全文大约需要 178 分钟
+                    </span>
+                    
+                    <span class="post-meta-item">
+                        <svg class="icon pv" aria-hidden="true">
+                            <use xlink:href="#icon-pv"></use>
+                        </svg>
+                        本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次
+                    </span>
+                    
+                    
+        </div>
+    </div>
+    
+</div>
+
+<main class="post-content visible">
+    
+
+    
+
+    <div class="container">
+        
+<div class="submenu hidden">
+
+</div>
+        <div class="contents">
+            <article class="markdown-body post">
+                
+
+
+                <h2 id="configyml文件">config.yml文件</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#### 站点信息，对 SEO 比较重要
+title: 'Hin小站'    # 站点名称
+description: '时间太瘦，指缝太宽。'   # 站点描述
+keyword: 'Hin, 小站'    # 关键词
+url: 'https://hintryer.github.io/'    # 站点域名
+baseurl: ''     # 可选，站点子目录（适用于部署在子目录）
+favicon: '/favicon.ico'    # 站点浏览器图标，可以是外部链接
+gray: false  # 全站变灰，可用于国家公祭日等哀悼场合。
+
+#### 博主信息
+author: 'Hin'     # 作者
+nickname: 'Hin'   # 昵称
+bio: '人类美学的奇迹'   # 一句话描述
+avatar: '/assets/img/profile.webp'   # 头像，可以是外部链接
+# sns:   # 彩色社交图标，默认无配置，按需添加。
+#   google-scholar: 'https://scholar.google.com/'        # 谷歌学术链接
+#   researchgate: 'https://www.research.net/profile/'    # ResearchGate 链接
+#   ORCID: 'https://orcid.org/'                          # ORCID 链接
+#   github: 'https://github.com/zhonger'                 # Github 链接
+#   linkedin: 'https://www.linkedin.com/in/'             # 领英链接
+#   segmentfault: 'https://segmentfault.com/u/'          # SegmentFault 链接
+#   email: 'i@jekyll-theme-h2o-ac.com'   # 邮箱
+#   weibo: 'https://weibo.com/username'  # 微博链接
+#   zhihu: 'https://zhihu.com'           # 知乎链接
+#   twitter: 'https://twitter.com'       # 推特链接
+#   instagram: 'https://instagram.com'   # Instagram 链接
+#   juejin: 'https://juejin.com'         # 掘金链接
+#   douban: 'https://douban.com'         # 豆瓣网链接
+#   facebook: 'https://facebook.com'     # 脸书链接
+#   dribble: 'https://dribble.com'       # Dribble 链接
+#   uicn: 'https://www.ui.cn'            # UI 中国链接
+#   jianshu: 'https://jianshu.com'       # 简书链接
+#   medium: 'https://medium.com'         # Medium 链接
+
+
+#### 主题信息
+version: 1.3.5          # 主题版本，无须自行设置，请采用默认配置。
+theme-color: default    # 站点主题色，默认（蓝色，default）和粉色（pink）
+postPatters: 'circuitBoard' # 页面封面默认模式，仅在未定义封面图时生效。
+# 支持 circuitBoard，overlappingCircles，food，
+# glamorous，ticTacToe，seaOfClouds 五种。
+nightMode: false        # 夜间模式是否默认开启
+tos: /tos.html          # 站点服务条款链接
+permalink: /:categories/:title.html  # 文章页自动生成规则
+mathjax: true   # 是否开启 MathJax 公式支持
+RSS: false       # 是否开启 RSS 生成，robots.txt 和 sitemap.xml 文件。
+timezone: Asia/Tokyo  # 默认时区
+formats:    # 各种格式
+  time: 0   # 时间格式，0 -- 2022-04-29  1 -- 29 Apr 2022  2 -- 2022年4月29日
+##### 顶部导航栏，键值对定义显示名称与链接，可以是中文名（需使用引号）。
+nav:                    
+  首页: '/'               
+  博客: '/blog/index.html'
+  归档: '/archives.html'
+  标签: '/tags.html'
+  工具:
+    RSS: '/feed.xml'
+    CV: '/cv.html'
+    links: '/links.html'
+##### 侧边栏配置
+links: # 友情链接（侧边栏），键值对定义显示名称与链接，可以是中文名（需使用引号）。
+  'Mr Li': 'https://lisz.me'
+  'H2O-ac 设置': 'https://h2o-ac-doc.lisz.me/' 
+calendar: false  # 是否开启文章发表日历（侧边栏与归档页）
+recommend-tags: true           # 是否显示推荐便签
+recommend-condition-size: 12   # 显示推荐标签数量
+##### 底部版权栏
+footer:          # 底部信息
+  since: 2024    # 站点建站年份，用于显示版权起始时间。
+alivetime: false  # 是否开启实时计算站点存活时间（底部）
+alivestart: "12/23/2021" # 站点建站年月日，用于实时计算站点存活时间。
+supports: # 赞助商徽章
+  upyun: false              # 又拍云
+  webify: false            # 腾讯云 Webify
+badges:  # 其他徽章
+  foreverblog: false        # Foreverblog
+  wormhole: false           # Wormhole
+  travelling: false         # Travelling
+  notbyAI: false            # NotByAI
+cclicense: false  # 是否以 Creative Commons 协议共享文章内容版权
+# beian: '沪ICP备xxxxxxxx号'  # ICP 备案信息
+##### 国际化
+languages: ['zh-Hans', 'zh-Hant', 'en', 'ja']  # 国际化语言支持列表
+default_lang: 'zh-Hans'  # 默认语言
+#### 文章最近更新时间自动更新
+github:
+  enabled: true                       # 是否开启
+  owner: hintryer                     # Github 命名空间，用户名或组织名
+  repository: hintryer.github.io      # 项目名
+toc: true  # 是否开启文章页目录导航
+social-share: false      # 是否开启社交分享
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter'] # 社交分享列表
+# 绝大多数社交媒体均支持。考虑到该功能的鸡肋，未来可能会移除。
+#### Markdown
+markdown: kramdown    # Markdown 语法解析器
+kramdown:             # Markdown 语法解析器配置
+  input: GFM
+highlighter: rouge    # 代码高亮解析器
+prism:                # 代码高亮主题配置节
+  theme: one-light    # 代码高亮主题，支持所有官方主题
+  line_numbers: true  # 是否开启代码行号
+mermaid: true         # 是否开启代码流程图支持，可以根据符合 mermaid 语法的代码画图。
+extlinks:             # 区分站内链接与站外链接
+  attributes: {rel: nofollow, target: _blank, class: extlinks}  # 站外链接配置
+  rel_exclude: ['host1.com', 'host2.net']  # 可以被认为是站内链接的多域名配置
+premonition:    # 支持五种提示框，note、info、warning、error、citation。
+  default:      # 一般采用默认配置即可，无须自定义修改。
+    template: '&lt;div class="premonition "&gt;
+          &lt;div class="header"&gt;
+            &lt;svg class="icon " aria-hidden="true"&gt;
+                &lt;use xlink:href="#icon-"&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+            &lt;div class="title"&gt;  &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="content"&gt;
+            
+
+
+&lt;div class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+    data-theme="default"&gt;
+    &lt;div class="post-wrapper"&gt;
+        &lt;div class="post-tags"&gt;
+            
+        &lt;/div&gt;
+        &lt;h1&gt;git总结&lt;/h1&gt;
+        &lt;div class="post-meta"&gt;
+            &lt;span class="post-meta-item"&gt;
+                &lt;svg class="icon" aria-hidden="true"&gt;
+                    &lt;use xlink:href="#icon-user"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                zhonger
+            &lt;/span&gt;
+            &lt;time class="post-meta-item" datetime=" 24-10-24"&gt;
+                &lt;svg class="icon" aria-hidden="true"&gt;
+                    &lt;use xlink:href="#icon-calendar"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class="create-at"&gt;&lt;/span&gt;
+            &lt;/time&gt;
+            &lt;time class="post-meta-item" datetime=" 24-10-24"&gt;
+                &lt;svg class="icon" aria-hidden="true"&gt;
+                    &lt;use xlink:href="#icon-update"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class="update-at"&gt;&lt;/span&gt;
+            &lt;/time&gt;
+            &lt;span class="post-meta-item"&gt;
+                &lt;svg class="icon words" aria-hidden="true"&gt;
+                    &lt;use xlink:href="#icon-words"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                
+                本文总共  5.2k  字 &lt;/span&gt;
+                    &lt;span class="post-meta-item"&gt;
+                        &lt;svg class="icon time" aria-hidden="true"&gt;
+                            &lt;use xlink:href="#icon-time"&gt;&lt;/use&gt;
+                        &lt;/svg&gt;
+                        阅读全文大约需要 15 分钟
+                    &lt;/span&gt;
+                    
+                    &lt;span class="post-meta-item"&gt;
+                        &lt;svg class="icon pv" aria-hidden="true"&gt;
+                            &lt;use xlink:href="#icon-pv"&gt;&lt;/use&gt;
+                        &lt;/svg&gt;
+                        本文总阅读量 &lt;span id="busuanzi_value_page_pv"&gt;&lt;/span&gt; 次
+                    &lt;/span&gt;
+                    
+                    
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;main class="post-content visible"&gt;
+    
+
+    
+
+    &lt;div class="container"&gt;
+        
+&lt;div class="submenu hidden"&gt;
+
+&lt;/div&gt;
+        &lt;div class="contents"&gt;
+            &lt;article class="markdown-body post"&gt;
+                
+
+
+                &lt;h2 id="总结"&gt;总结&lt;/h2&gt;
+
+&lt;div class="language-javascript highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;init&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git commit -m "提交说明"
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote rm origin
+git remote add origin git@gitee.com:mroph/novel.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git pull --rebase origin master
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id="详细步骤"&gt;详细步骤&lt;/h2&gt;
+
+&lt;h3 id="初始化"&gt;初始化&lt;/h3&gt;
+
+&lt;h4 id="定位工作目录"&gt;定位工作目录&lt;/h4&gt;
+
+&lt;p&gt;打开 Git Bash 终端，使用 &lt;code class="language-plaintext highlighter-rouge"&gt;cd&lt;/code&gt;命令加上要切换的路径，例如：&lt;code class="language-plaintext highlighter-rouge"&gt;cd /c/Users/username/Documents&lt;/code&gt;；按下回车键，即可切换到指定的路径。需要注意的是路径中需要使用正斜杠 / 分隔路径，而不是反斜杠 \。&lt;/p&gt;
+
+&lt;p&gt;使用&lt;code class="language-plaintext highlighter-rouge"&gt;pwd&lt;/code&gt;可以显示当前路径&lt;/p&gt;
+
+&lt;h4 id="初始化用户信息"&gt;初始化用户信息&lt;/h4&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git config --global user.name 'better'
+git config --global user.email '1063266220@qq.com'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id="创建本地仓库"&gt;创建本地仓库&lt;/h3&gt;
+
+&lt;p&gt;创建本地仓库的方法有两种：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一种是创建全新的仓库：&lt;code class="language-plaintext highlighter-rouge"&gt;git init&lt;/code&gt;，会在当前目录初始化创建仓库，也可指定目录：&lt;code class="language-plaintext highlighter-rouge"&gt;git init [文件目录]&lt;/code&gt;执行命令后，如下显示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;$ git init
+Initialized empty Git repository in /Users/michael/learngit/.git/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;创建完多出了一个被隐藏的.git 目录，这就是本地仓库 Git 的工作场所，而且是一个空的仓库（empty Git repository）。没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 Git 仓库给破坏了。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;另一种是克隆远程仓库：&lt;code class="language-plaintext highlighter-rouge"&gt;git clone [url]&lt;/code&gt;
+克隆远程仓库，如在 github 上创建的仓库“&lt;code class="language-plaintext highlighter-rouge"&gt;https://github.com/kwonganding/KWebNote.git&lt;/code&gt;”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;$ git clone 'https://github.com/kwonganding/KWebNote.git'
+Cloning into 'KWebNote'...
+remote: Enumerating objects: 108, done.
+remote: Counting objects: 100% (108/108), done.
+remote: Compressing objects: 100% (60/60), done.
+remote: Total 108 (delta 48), reused 88 (delta 34), pack-reused 0
+Receiving objects: 100% (108/108), 9.36 KiB | 736.00 KiB/s, done.
+Resolving deltas: 100% (48/48), done.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;会在当前目录下创建“KWebNote”项目目录。&lt;/p&gt;
+
+&lt;h3 id="暂存区-add"&gt;暂存区 add&lt;/h3&gt;
+
+&lt;p&gt;把工作区变化放到暂存区中，执行命令&lt;code class="language-plaintext highlighter-rouge"&gt;git add .&lt;/code&gt;可以一次性把所有变化文件放入暂存区&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;$ git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;执行上面的命令，没有任何显示，说明添加成功。也可以先执行&lt;code class="language-plaintext highlighter-rouge"&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;命令将指定的&lt;code class="language-plaintext highlighter-rouge"&gt;file&lt;/code&gt;从当前的暂存区中删除但保留文件在本地工作目录中。
+| &lt;strong&gt;指令&lt;/strong&gt; | &lt;strong&gt;描述&lt;/strong&gt; |
+| — | — |
+| git add [file1] [file2] | 添加文件到暂存区，包括修改的文件、新增的文件 |
+| git add [dir] | 同上，添加目录到暂存区，包括子目录 |
+| git add . | 同上，添加&lt;strong&gt;所有&lt;/strong&gt;修改、新增文件（未跟踪）到暂存区 |
+| git rm [file] | 删除工作区文件，并且将这次删除放入暂存区 |
+|git rm –cached [file]|删除放入暂存区 ，但该文件会保留在工作区|&lt;/p&gt;
+
+&lt;h3 id="提交-commit-记录"&gt;提交 commit-记录&lt;/h3&gt;
+
+&lt;p&gt;把暂存区内容提交到版本库，命令如下（此处文字说明可以不加引号）&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git commit -m '提交的内容说明'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;执行上面的命令，如下显示&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;$ git commit -m "wrote a readme file"
+[master (root-commit) eaadf4e] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class="language-plaintext highlighter-rouge"&gt;git commit&lt;/code&gt;命令执行成功后会告诉你，&lt;code class="language-plaintext highlighter-rouge"&gt;1 file changed&lt;/code&gt;：1 个文件被改动（我们新添加的 readme.txt 文件）；&lt;code class="language-plaintext highlighter-rouge"&gt;2 insertions&lt;/code&gt;：插入了两行内容（readme.txt 有两行内容）。
+以上命令相当于存档了一次，在版本库中产生一次提交记录并生成版本号。本次存档，不耽误我们在工作区 (项目文件夹) 下继续编写项目&lt;/p&gt;
+
+&lt;p&gt;如果改的代码过多，忘记改过哪些了，可以运行&lt;code class="language-plaintext highlighter-rouge"&gt;git status&lt;/code&gt;命令来查看 git 仓库变化，只能看未提交的所有变更的文件状态
+| &lt;strong&gt;指令&lt;/strong&gt; | &lt;strong&gt;描述&lt;/strong&gt; |
+| — | — |
+| git commit -m ‘说明’ | 提交变更，参数&lt;code class="language-plaintext highlighter-rouge"&gt;-m&lt;/code&gt;设置提交的描述信息，应该正确提交，不带该参数会进入说明编辑模式 |
+| git commit -a | 参数&lt;code class="language-plaintext highlighter-rouge"&gt;-a&lt;/code&gt;，表示直接从工作区提交到版本库，略过了&lt;code class="language-plaintext highlighter-rouge"&gt;git add&lt;/code&gt;步骤，不包括新增的文件 |
+| git commit [file] | 提交暂存区的指定文件到仓库区 |
+| git commit –amend -m | 使用一次新的&lt;code class="language-plaintext highlighter-rouge"&gt;commit&lt;/code&gt;，替代上一次提交，会修改&lt;code class="language-plaintext highlighter-rouge"&gt;commit&lt;/code&gt;的&lt;code class="language-plaintext highlighter-rouge"&gt;hash&lt;/code&gt;值（id） |
+| git &lt;strong&gt;reflog&lt;/strong&gt; | 查看所有可用的历史版本记录（实际是 HEAD 变更记录），包含被回退的记录（&lt;strong&gt;重要&lt;/strong&gt;） |
+| git status | 查看本地仓库状态，比较常用的指令，加参数&lt;code class="language-plaintext highlighter-rouge"&gt;-s&lt;/code&gt;简洁模式 |&lt;/p&gt;
+
+&lt;h3 id="将本地代码仓库关联到-gitee-上git-remote-add"&gt;将本地代码仓库关联到 gitee 上&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;
+&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第一次提交直接执行以下命令关联&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt; git remote add origin 仓库地址
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;此后，每次本地提交后，只要有必要，就可以使用命令&lt;code class="language-plaintext highlighter-rouge"&gt;git push origin master&lt;/code&gt;推送最新修改；&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第二次提交先删除，再关联&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote rm origin
+git remote add origin 仓库地址
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;否则会在使用命令&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;时报错：&lt;code class="language-plaintext highlighter-rouge"&gt;fatal: remote origin already exists.&lt;/code&gt;，说明本地库已经关联了一个名叫&lt;code class="language-plaintext highlighter-rouge"&gt;origin&lt;/code&gt;的远程库，&lt;/p&gt;
+
+&lt;h3 id="将代码由本地仓库上传到-gitee-远程仓库"&gt;将代码由本地仓库上传到 gitee 远程仓库&lt;/h3&gt;
+
+&lt;p&gt;执行以下命令，先拉取后推送&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git pull --rebase origin master
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;远程仓库指令&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;描述&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git clone [git 地址]&lt;/td&gt;
+      &lt;td&gt;从远程仓库克隆到本地（当前目录）&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git remote -v&lt;/td&gt;
+      &lt;td&gt;查看所有远程仓库，不带参数&lt;code class="language-plaintext highlighter-rouge"&gt;-v&lt;/code&gt;只显示名称&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git remote show [remote]&lt;/td&gt;
+      &lt;td&gt;显示某个远程仓库的信息&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;git remote add [name] [url]&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;增加一个新的远程仓库，并命名&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git remote rename [old] [new]&lt;/td&gt;
+      &lt;td&gt;修改远程仓库名称&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;git pull [remote] [branch]&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;取回远程仓库的变化，并与本地版本合并&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;git pull&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;同上，针对当前分支&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git fetch [remote]&lt;/td&gt;
+      &lt;td&gt;获取远程仓库的所有变动到本地仓库，不会自动合并！需要手动合并&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;git push&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;推送当前分支到远程仓库&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git push [remote] [branch]&lt;/td&gt;
+      &lt;td&gt;推送本地当前分支到远程仓库的指定分支&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git push [remote] –force/-f&lt;/td&gt;
+      &lt;td&gt;强行推送当前分支到远程仓库，即使有冲突，⚠️ 很危险！&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git push [remote] –all&lt;/td&gt;
+      &lt;td&gt;推送所有分支到远程仓库&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git push –u&lt;/td&gt;
+      &lt;td&gt;参数&lt;code class="language-plaintext highlighter-rouge"&gt;–u&lt;/code&gt;表示与远程分支建立关联，第一次执行的时候用，后面就不需要了&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git remote rm [remote-name]&lt;/td&gt;
+      &lt;td&gt;删除远程仓库&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git pull –rebase&lt;/td&gt;
+      &lt;td&gt;使用 rebase 的模式进行合并&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id="错误"&gt;错误&lt;/h1&gt;
+
+&lt;h2 id="git-init-报错"&gt;git init 报错&lt;/h2&gt;
+
+&lt;p&gt;当我们在一个目录下初始化 git 时 可能会出现这个报错，&lt;/p&gt;
+
+&lt;div class="language-javascript highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span class="nx"&gt;$&lt;/span&gt; &lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;init&lt;/span&gt;
+&lt;span class="nx"&gt;warning&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;templates&lt;/span&gt; &lt;span class="nx"&gt;not&lt;/span&gt; &lt;span class="nx"&gt;found&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="sr"&gt;/home/&lt;/span&gt;&lt;span class="nx"&gt;ja&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;share&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;git&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;core&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;templates&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;Using&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;master&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt; &lt;span class="nx"&gt;as&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;initial&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="nx"&gt;This&lt;/span&gt; &lt;span class="k"&gt;default&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;is&lt;/span&gt; &lt;span class="nx"&gt;subject&lt;/span&gt; &lt;span class="nx"&gt;to&lt;/span&gt; &lt;span class="nx"&gt;change&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="nx"&gt;To&lt;/span&gt; &lt;span class="nx"&gt;configure&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;initial&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; &lt;span class="nx"&gt;to&lt;/span&gt; &lt;span class="nx"&gt;use&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;all&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="nx"&gt;your&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;repositories&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;which&lt;/span&gt; &lt;span class="nx"&gt;will&lt;/span&gt; &lt;span class="nx"&gt;suppress&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt; &lt;span class="nx"&gt;warning&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nb"&gt;global&lt;/span&gt; &lt;span class="nx"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;defaultBranch&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;Names&lt;/span&gt; &lt;span class="nx"&gt;commonly&lt;/span&gt; &lt;span class="nx"&gt;chosen&lt;/span&gt; &lt;span class="nx"&gt;instead&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;master&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt; &lt;span class="nx"&gt;are&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;main&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;trunk&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt; &lt;span class="nx"&gt;and&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;development&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="nx"&gt;The&lt;/span&gt; &lt;span class="nx"&gt;just&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;created&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt; &lt;span class="nx"&gt;can&lt;/span&gt; &lt;span class="nx"&gt;be&lt;/span&gt; &lt;span class="nx"&gt;renamed&lt;/span&gt; &lt;span class="nx"&gt;via&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt; &lt;span class="nx"&gt;command&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;m&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nx"&gt;Initialized&lt;/span&gt; &lt;span class="nx"&gt;empty&lt;/span&gt; &lt;span class="nx"&gt;Git&lt;/span&gt; &lt;span class="nx"&gt;repository&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="sr"&gt;/tmp/&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt;&lt;span class="sr"&gt;/.git/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;解决：&lt;/strong&gt; 执行&lt;code class="language-plaintext highlighter-rouge"&gt;git config --global init.defaultBranch master&lt;/code&gt; 命令，设置默认分支为 master 级别就不会再报错了&lt;/p&gt;
+
+&lt;div class="language-javascript highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nb"&gt;global&lt;/span&gt; &lt;span class="nx"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;defaultBranch&lt;/span&gt; &lt;span class="nx"&gt;master&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id="git-add-报错"&gt;git add .报错&lt;/h2&gt;
+
+&lt;p&gt;git add .报错 &lt;code class="language-plaintext highlighter-rouge"&gt;warning: adding embedded git repository\:xxxxxxxxxx&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;执行- $ git add .命令时出现出现这个报错&lt;/p&gt;
+
+&lt;div class="language-bash highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;warning: adding embedded git repository:xxxxxxxxxx
+hint: You&lt;span class="s1"&gt;'ve added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: git submodule add &amp;lt;url&amp;gt;xxxxxxxxxx
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: git rm --cached   xxxx
+hint:
+hint: See "git help submodule" for more information.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;原因：&lt;/strong&gt; 使用 &lt;code class="language-plaintext highlighter-rouge"&gt;git add .&lt;/code&gt; 时，出现上述错误。是因为在当前 &lt;code class="language-plaintext highlighter-rouge"&gt;git&lt;/code&gt; 仓库中同时包含有另一个&lt;code class="language-plaintext highlighter-rouge"&gt;git&lt;/code&gt;仓库。如当前仓库目录下的子文件夹内又是一个仓库。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解决：&lt;/strong&gt; 删除子文件夹的.git 文件， 重新执行&lt;code class="language-plaintext highlighter-rouge"&gt;git add .&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id="git-remote-add时报错"&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;时报错：&lt;/h2&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote add origin git@gitee.com:liaoxuefeng/learngit.git
+fatal: remote origin already exists.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这说明本地库已经关联了一个名叫&lt;code class="language-plaintext highlighter-rouge"&gt;origin&lt;/code&gt;的远程库，可以用&lt;code class="language-plaintext highlighter-rouge"&gt;git remote rm &amp;lt;name&amp;gt;&lt;/code&gt;命令已有的远程库。&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote -v
+origin	git@github.com:michaelliao/learngit.git (fetch)
+origin	git@github.com:michaelliao/learngit.git (push)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可以看到，本地库已经关联了&lt;code class="language-plaintext highlighter-rouge"&gt;origin&lt;/code&gt;的远程库，并且，该远程库指向 GitHub。我们可以删除已有的 GitHub 远程库再关联 Gitee 的远程库&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote rm origin
+git remote add origin 仓库地址
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id="git-上传报错"&gt;git 上传报错&lt;/h2&gt;
+
+&lt;h3 id="第一个问题"&gt;第一个问题&lt;/h3&gt;
+
+&lt;p&gt;上传步骤：&lt;br&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;git add .&lt;/code&gt;&lt;br&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;git commit -m "提示消息"&lt;/code&gt;&lt;br&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;git push origin master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;出错：&lt;br&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;! [rejected] master -&amp;gt; master (fetch first) error: failed to push some refs to ' 。。。'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;出现这个问题是因为 github 中的 README.md 文件不在本地代码目录中，可以通过如下命令进行代码合并&lt;/p&gt;
+
+&lt;p&gt;&lt;code class="language-plaintext highlighter-rouge"&gt;git pull --rebase origin master&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id="第二个问题"&gt;第二个问题&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class="language-plaintext highlighter-rouge"&gt;! [remote rejected] master -&amp;gt; master (pre-receive hook declined)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在推送代码时报错如上，网上搜到的方法说是项目的 setting 中 master 是受保护的项目，所以开发者无法推送，解决方法是修改 protected 的设置，或者新建一个分支，推送到自己的分支上&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.cnblogs.com/cppeterpan/p/7289266.html" rel="nofollow" target="_blank" class="extlinks"&gt;解决办法的文章&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id="git-push-报错"&gt;git push 报错&lt;/h2&gt;
+
+&lt;p&gt;gitee 第一次提交代码提交不上去，到 push 这一步老是遇到&lt;/p&gt;
+
+&lt;div class="language-javascript highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;  &lt;span class="o"&gt;!&lt;/span&gt; &lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;remote&lt;/span&gt; &lt;span class="nx"&gt;rejected&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="nx"&gt;master&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;master &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;hook&lt;/span&gt; &lt;span class="nx"&gt;declined&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;failed&lt;/span&gt; &lt;span class="nx"&gt;to&lt;/span&gt; &lt;span class="nx"&gt;push&lt;/span&gt; &lt;span class="nx"&gt;some&lt;/span&gt; &lt;span class="nx"&gt;refs&lt;/span&gt; &lt;span class="nx"&gt;to&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这种情况，老是提不上去。那是因为。你的邮箱设置，&lt;strong&gt;不公开我的邮箱&lt;/strong&gt;把这个勾上了，取消勾选就行了。这样导致找不到你的远程地址。所以推不上去&lt;/p&gt;
+
+                &lt;div class="post-copyright"&gt;
+                    &lt;p&gt;
+                        &lt;span&gt;版权声明：&lt;/span&gt;
+                        如无特别声明，本文版权归
+                        &lt;a href="https://h2o-ac.pages.dev" class="cplink"&gt;Mr Li&lt;/a&gt;
+                        所有，转载请注明本文链接。
+                    &lt;/p&gt;
+                    
+                    &lt;p&gt;
+                        （采用 
+                        &lt;a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="extlinks"&gt;CC
+                            BY-NC-SA 4.0&lt;/a&gt;
+                        许可协议进行授权）
+                    &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;span&gt;本文标题：&lt;/span&gt;《 git总结 》&lt;/p&gt;
+                    &lt;p&gt;&lt;span&gt;本文链接：&lt;/span&gt;&lt;a href="https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html" class="cplink"&gt;https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html&lt;/a&gt;&lt;/p&gt;
+                    &lt;p class="tips"&gt;本文最后一次更新为 &lt;span&gt;&lt;/span&gt; 天前，文章中的某些内容可能已过时！
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+        
+            &lt;div class="table-of-contents"&gt;
+                &lt;div class="toc-header"&gt;&lt;h2&gt;目录&lt;/h2&gt;&lt;/div&gt;
+                &lt;div class="toc-body"&gt;
+                    &lt;ul&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('总结')"&gt;总结&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('详细步骤')"&gt;详细步骤&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('初始化')"&gt;初始化&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('定位工作目录')"&gt;定位工作目录&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('初始化用户信息')"&gt;初始化用户信息&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('创建本地仓库')"&gt;创建本地仓库&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('暂存区-add')"&gt;暂存区 add&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('提交-commit-记录')"&gt;提交 commit-记录&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('将本地代码仓库关联到-gitee-上&lt;code-class="language-plaintext-highlighter-rouge"&gt;git-remote-add&lt;/code&gt;')"&gt;将本地代码仓库关联到 gitee 上&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('将代码由本地仓库上传到-gitee-远程仓库')"&gt;将代码由本地仓库上传到 gitee 远程仓库&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('git-init-报错')"&gt;git init 报错&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('git-add-.报错')"&gt;git add .报错&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('&lt;code-class="language-plaintext-highlighter-rouge"&gt;git-remote-add&lt;/code&gt;时报错')"&gt;&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;时报错：&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('git-上传报错')"&gt;git 上传报错&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('第一个问题')"&gt;第一个问题&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('第二个问题')"&gt;第二个问题&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('git-push-报错')"&gt;git push 报错&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+                &lt;/div&gt;
+        
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+&lt;div class="social-share-wrapper"&gt;
+    &lt;div class="social-share"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/main&gt;
+
+&lt;section class="author-detail"&gt;
+    &lt;section class="post-footer-item author-card"&gt;
+        &lt;div class="avatar"&gt;
+            &lt;img src="/assets/img/profile.webp" alt=""&gt;
+        &lt;/div&gt;
+        &lt;div class="author-name" rel="author"&gt;zhonger&lt;/div&gt;
+        &lt;div class="bio"&gt;
+            &lt;p&gt;全栈开发者，热爱前端、运维和架构设计&lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;ul class="sns-links"&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://scholar.google.com/citations?user=AUupIooAAAAJ" target="_blank" aria-label="google-scholar"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-google-scholar"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://www.researchgate.net/profile/Shengzhou-Li" target="_blank" aria-label="researchgate"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-researchgate"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://orcid.org/0000-0001-6973-3825" target="_blank" aria-label="ORCID"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-ORCID"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://github.com/zhonger" target="_blank" aria-label="github"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-github"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://www.linkedin.com/in/shengzhouli/" target="_blank" aria-label="linkedin"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-linkedin"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://segmentfault.com/u/wuwozhonger" target="_blank" aria-label="segmentfault"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-segmentfault"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+        &lt;/ul&gt;
+        
+    &lt;/section&gt;
+    &lt;section class="post-footer-item read-next"&gt;
+        
+        &lt;div class="read-next-item"&gt;
+            &lt;a href="/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html" class="read-next-link" aria-label="H2O-ac主题设置"&gt;&lt;/a&gt;
+            &lt;section&gt;
+                &lt;span&gt;H2O-ac主题设置&lt;/span&gt;
+                &lt;p&gt;config.yml文件```站点信息，对 SEO 比较重要title: ‘Hin小站’    # 站点名称des...&lt;/p&gt;
+            &lt;/section&gt;
+            
+        &lt;/div&gt;
+        
+
+        
+        &lt;div class="read-next-item"&gt;
+            &lt;a href="/test/test-en.html" class="read-next-link"
+                aria-label="Test en"&gt;&lt;/a&gt;
+            &lt;section&gt;
+                &lt;span&gt;Test en&lt;/span&gt;
+                &lt;p&gt;Chapter 1&lt;/p&gt;
+            &lt;/section&gt;
+            
+            &lt;div class="filter"&gt;&lt;/div&gt;
+            &lt;img src="https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a" alt=""&gt;
+            
+        &lt;/div&gt;
+        
+    &lt;/section&gt;
+    
+
+
+    
+        
+&lt;section class="post-footer-item comment"&gt;
+    &lt;div class="comments-headline"&gt;
+        &lt;svg class="icon" aria-hidden="true"&gt;
+            &lt;use xlink:href="#icon-comment"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span&gt;评论&lt;/span&gt;
+    &lt;/div&gt;
+    
+        
+        &lt;div id="comments-switch"&gt;
+            &lt;span class="first-comment"&gt;Disqus&lt;/span&gt;
+            &lt;span class="switch-button"&gt;
+                &lt;input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox"&gt;
+                &lt;label for="cmn-toggle-4"&gt;&lt;/label&gt;
+            &lt;/span&gt;
+            &lt;span class="second-comment"&gt;Waline&lt;/span&gt;
+        &lt;/div&gt;
+        
+    
+&lt;/section&gt;
+
+    
+
+
+
+    
+    &lt;section class="post-footer-item comment"&gt;
+        &lt;div id="disqus_thread"&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    
+    
+    &lt;section class="post-footer-item comment"&gt;
+        &lt;div id="waline"&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    
+
+&lt;/section&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;'
+  types:
+    citation:
+      template: '&lt;div class="premonition "&gt;
+          &lt;div class="header"&gt;
+            &lt;svg class="icon " aria-hidden="true"&gt;
+                &lt;use xlink:href="#icon-"&gt;&lt;/use&gt;
+            &lt;/svg&gt;     
+          &lt;/div&gt;
+          &lt;div class="content"&gt;
+            
+
+
+&lt;div class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+    data-theme="default"&gt;
+    &lt;div class="post-wrapper"&gt;
+        &lt;div class="post-tags"&gt;
+            
+        &lt;/div&gt;
+        &lt;h1&gt;git总结&lt;/h1&gt;
+        &lt;div class="post-meta"&gt;
+            &lt;span class="post-meta-item"&gt;
+                &lt;svg class="icon" aria-hidden="true"&gt;
+                    &lt;use xlink:href="#icon-user"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                zhonger
+            &lt;/span&gt;
+            &lt;time class="post-meta-item" datetime=" 24-10-24"&gt;
+                &lt;svg class="icon" aria-hidden="true"&gt;
+                    &lt;use xlink:href="#icon-calendar"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class="create-at"&gt;&lt;/span&gt;
+            &lt;/time&gt;
+            &lt;time class="post-meta-item" datetime=" 24-10-24"&gt;
+                &lt;svg class="icon" aria-hidden="true"&gt;
+                    &lt;use xlink:href="#icon-update"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class="update-at"&gt;&lt;/span&gt;
+            &lt;/time&gt;
+            &lt;span class="post-meta-item"&gt;
+                &lt;svg class="icon words" aria-hidden="true"&gt;
+                    &lt;use xlink:href="#icon-words"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                
+                本文总共  5.2k  字 &lt;/span&gt;
+                    &lt;span class="post-meta-item"&gt;
+                        &lt;svg class="icon time" aria-hidden="true"&gt;
+                            &lt;use xlink:href="#icon-time"&gt;&lt;/use&gt;
+                        &lt;/svg&gt;
+                        阅读全文大约需要 15 分钟
+                    &lt;/span&gt;
+                    
+                    &lt;span class="post-meta-item"&gt;
+                        &lt;svg class="icon pv" aria-hidden="true"&gt;
+                            &lt;use xlink:href="#icon-pv"&gt;&lt;/use&gt;
+                        &lt;/svg&gt;
+                        本文总阅读量 &lt;span id="busuanzi_value_page_pv"&gt;&lt;/span&gt; 次
+                    &lt;/span&gt;
+                    
+                    
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;main class="post-content visible"&gt;
+    
+
+    
+
+    &lt;div class="container"&gt;
+        
+&lt;div class="submenu hidden"&gt;
+
+&lt;/div&gt;
+        &lt;div class="contents"&gt;
+            &lt;article class="markdown-body post"&gt;
+                
+
+
+                &lt;h2 id="总结"&gt;总结&lt;/h2&gt;
+
+&lt;div class="language-javascript highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;init&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git commit -m "提交说明"
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote rm origin
+git remote add origin git@gitee.com:mroph/novel.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git pull --rebase origin master
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id="详细步骤"&gt;详细步骤&lt;/h2&gt;
+
+&lt;h3 id="初始化"&gt;初始化&lt;/h3&gt;
+
+&lt;h4 id="定位工作目录"&gt;定位工作目录&lt;/h4&gt;
+
+&lt;p&gt;打开 Git Bash 终端，使用 &lt;code class="language-plaintext highlighter-rouge"&gt;cd&lt;/code&gt;命令加上要切换的路径，例如：&lt;code class="language-plaintext highlighter-rouge"&gt;cd /c/Users/username/Documents&lt;/code&gt;；按下回车键，即可切换到指定的路径。需要注意的是路径中需要使用正斜杠 / 分隔路径，而不是反斜杠 \。&lt;/p&gt;
+
+&lt;p&gt;使用&lt;code class="language-plaintext highlighter-rouge"&gt;pwd&lt;/code&gt;可以显示当前路径&lt;/p&gt;
+
+&lt;h4 id="初始化用户信息"&gt;初始化用户信息&lt;/h4&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git config --global user.name 'better'
+git config --global user.email '1063266220@qq.com'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id="创建本地仓库"&gt;创建本地仓库&lt;/h3&gt;
+
+&lt;p&gt;创建本地仓库的方法有两种：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一种是创建全新的仓库：&lt;code class="language-plaintext highlighter-rouge"&gt;git init&lt;/code&gt;，会在当前目录初始化创建仓库，也可指定目录：&lt;code class="language-plaintext highlighter-rouge"&gt;git init [文件目录]&lt;/code&gt;执行命令后，如下显示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;$ git init
+Initialized empty Git repository in /Users/michael/learngit/.git/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;创建完多出了一个被隐藏的.git 目录，这就是本地仓库 Git 的工作场所，而且是一个空的仓库（empty Git repository）。没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 Git 仓库给破坏了。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;另一种是克隆远程仓库：&lt;code class="language-plaintext highlighter-rouge"&gt;git clone [url]&lt;/code&gt;
+克隆远程仓库，如在 github 上创建的仓库“&lt;code class="language-plaintext highlighter-rouge"&gt;https://github.com/kwonganding/KWebNote.git&lt;/code&gt;”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;$ git clone 'https://github.com/kwonganding/KWebNote.git'
+Cloning into 'KWebNote'...
+remote: Enumerating objects: 108, done.
+remote: Counting objects: 100% (108/108), done.
+remote: Compressing objects: 100% (60/60), done.
+remote: Total 108 (delta 48), reused 88 (delta 34), pack-reused 0
+Receiving objects: 100% (108/108), 9.36 KiB | 736.00 KiB/s, done.
+Resolving deltas: 100% (48/48), done.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;会在当前目录下创建“KWebNote”项目目录。&lt;/p&gt;
+
+&lt;h3 id="暂存区-add"&gt;暂存区 add&lt;/h3&gt;
+
+&lt;p&gt;把工作区变化放到暂存区中，执行命令&lt;code class="language-plaintext highlighter-rouge"&gt;git add .&lt;/code&gt;可以一次性把所有变化文件放入暂存区&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;$ git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;执行上面的命令，没有任何显示，说明添加成功。也可以先执行&lt;code class="language-plaintext highlighter-rouge"&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;命令将指定的&lt;code class="language-plaintext highlighter-rouge"&gt;file&lt;/code&gt;从当前的暂存区中删除但保留文件在本地工作目录中。
+| &lt;strong&gt;指令&lt;/strong&gt; | &lt;strong&gt;描述&lt;/strong&gt; |
+| — | — |
+| git add [file1] [file2] | 添加文件到暂存区，包括修改的文件、新增的文件 |
+| git add [dir] | 同上，添加目录到暂存区，包括子目录 |
+| git add . | 同上，添加&lt;strong&gt;所有&lt;/strong&gt;修改、新增文件（未跟踪）到暂存区 |
+| git rm [file] | 删除工作区文件，并且将这次删除放入暂存区 |
+|git rm –cached [file]|删除放入暂存区 ，但该文件会保留在工作区|&lt;/p&gt;
+
+&lt;h3 id="提交-commit-记录"&gt;提交 commit-记录&lt;/h3&gt;
+
+&lt;p&gt;把暂存区内容提交到版本库，命令如下（此处文字说明可以不加引号）&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git commit -m '提交的内容说明'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;执行上面的命令，如下显示&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;$ git commit -m "wrote a readme file"
+[master (root-commit) eaadf4e] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class="language-plaintext highlighter-rouge"&gt;git commit&lt;/code&gt;命令执行成功后会告诉你，&lt;code class="language-plaintext highlighter-rouge"&gt;1 file changed&lt;/code&gt;：1 个文件被改动（我们新添加的 readme.txt 文件）；&lt;code class="language-plaintext highlighter-rouge"&gt;2 insertions&lt;/code&gt;：插入了两行内容（readme.txt 有两行内容）。
+以上命令相当于存档了一次，在版本库中产生一次提交记录并生成版本号。本次存档，不耽误我们在工作区 (项目文件夹) 下继续编写项目&lt;/p&gt;
+
+&lt;p&gt;如果改的代码过多，忘记改过哪些了，可以运行&lt;code class="language-plaintext highlighter-rouge"&gt;git status&lt;/code&gt;命令来查看 git 仓库变化，只能看未提交的所有变更的文件状态
+| &lt;strong&gt;指令&lt;/strong&gt; | &lt;strong&gt;描述&lt;/strong&gt; |
+| — | — |
+| git commit -m ‘说明’ | 提交变更，参数&lt;code class="language-plaintext highlighter-rouge"&gt;-m&lt;/code&gt;设置提交的描述信息，应该正确提交，不带该参数会进入说明编辑模式 |
+| git commit -a | 参数&lt;code class="language-plaintext highlighter-rouge"&gt;-a&lt;/code&gt;，表示直接从工作区提交到版本库，略过了&lt;code class="language-plaintext highlighter-rouge"&gt;git add&lt;/code&gt;步骤，不包括新增的文件 |
+| git commit [file] | 提交暂存区的指定文件到仓库区 |
+| git commit –amend -m | 使用一次新的&lt;code class="language-plaintext highlighter-rouge"&gt;commit&lt;/code&gt;，替代上一次提交，会修改&lt;code class="language-plaintext highlighter-rouge"&gt;commit&lt;/code&gt;的&lt;code class="language-plaintext highlighter-rouge"&gt;hash&lt;/code&gt;值（id） |
+| git &lt;strong&gt;reflog&lt;/strong&gt; | 查看所有可用的历史版本记录（实际是 HEAD 变更记录），包含被回退的记录（&lt;strong&gt;重要&lt;/strong&gt;） |
+| git status | 查看本地仓库状态，比较常用的指令，加参数&lt;code class="language-plaintext highlighter-rouge"&gt;-s&lt;/code&gt;简洁模式 |&lt;/p&gt;
+
+&lt;h3 id="将本地代码仓库关联到-gitee-上git-remote-add"&gt;将本地代码仓库关联到 gitee 上&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;
+&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第一次提交直接执行以下命令关联&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt; git remote add origin 仓库地址
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;此后，每次本地提交后，只要有必要，就可以使用命令&lt;code class="language-plaintext highlighter-rouge"&gt;git push origin master&lt;/code&gt;推送最新修改；&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第二次提交先删除，再关联&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote rm origin
+git remote add origin 仓库地址
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;否则会在使用命令&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;时报错：&lt;code class="language-plaintext highlighter-rouge"&gt;fatal: remote origin already exists.&lt;/code&gt;，说明本地库已经关联了一个名叫&lt;code class="language-plaintext highlighter-rouge"&gt;origin&lt;/code&gt;的远程库，&lt;/p&gt;
+
+&lt;h3 id="将代码由本地仓库上传到-gitee-远程仓库"&gt;将代码由本地仓库上传到 gitee 远程仓库&lt;/h3&gt;
+
+&lt;p&gt;执行以下命令，先拉取后推送&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git pull --rebase origin master
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;远程仓库指令&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;描述&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git clone [git 地址]&lt;/td&gt;
+      &lt;td&gt;从远程仓库克隆到本地（当前目录）&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git remote -v&lt;/td&gt;
+      &lt;td&gt;查看所有远程仓库，不带参数&lt;code class="language-plaintext highlighter-rouge"&gt;-v&lt;/code&gt;只显示名称&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git remote show [remote]&lt;/td&gt;
+      &lt;td&gt;显示某个远程仓库的信息&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;git remote add [name] [url]&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;增加一个新的远程仓库，并命名&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git remote rename [old] [new]&lt;/td&gt;
+      &lt;td&gt;修改远程仓库名称&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;git pull [remote] [branch]&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;取回远程仓库的变化，并与本地版本合并&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;git pull&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;同上，针对当前分支&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git fetch [remote]&lt;/td&gt;
+      &lt;td&gt;获取远程仓库的所有变动到本地仓库，不会自动合并！需要手动合并&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;git push&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;推送当前分支到远程仓库&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git push [remote] [branch]&lt;/td&gt;
+      &lt;td&gt;推送本地当前分支到远程仓库的指定分支&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git push [remote] –force/-f&lt;/td&gt;
+      &lt;td&gt;强行推送当前分支到远程仓库，即使有冲突，⚠️ 很危险！&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git push [remote] –all&lt;/td&gt;
+      &lt;td&gt;推送所有分支到远程仓库&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git push –u&lt;/td&gt;
+      &lt;td&gt;参数&lt;code class="language-plaintext highlighter-rouge"&gt;–u&lt;/code&gt;表示与远程分支建立关联，第一次执行的时候用，后面就不需要了&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git remote rm [remote-name]&lt;/td&gt;
+      &lt;td&gt;删除远程仓库&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;git pull –rebase&lt;/td&gt;
+      &lt;td&gt;使用 rebase 的模式进行合并&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id="错误"&gt;错误&lt;/h1&gt;
+
+&lt;h2 id="git-init-报错"&gt;git init 报错&lt;/h2&gt;
+
+&lt;p&gt;当我们在一个目录下初始化 git 时 可能会出现这个报错，&lt;/p&gt;
+
+&lt;div class="language-javascript highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span class="nx"&gt;$&lt;/span&gt; &lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;init&lt;/span&gt;
+&lt;span class="nx"&gt;warning&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;templates&lt;/span&gt; &lt;span class="nx"&gt;not&lt;/span&gt; &lt;span class="nx"&gt;found&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="sr"&gt;/home/&lt;/span&gt;&lt;span class="nx"&gt;ja&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;share&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;git&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;core&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;templates&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;Using&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;master&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt; &lt;span class="nx"&gt;as&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;initial&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="nx"&gt;This&lt;/span&gt; &lt;span class="k"&gt;default&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;is&lt;/span&gt; &lt;span class="nx"&gt;subject&lt;/span&gt; &lt;span class="nx"&gt;to&lt;/span&gt; &lt;span class="nx"&gt;change&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="nx"&gt;To&lt;/span&gt; &lt;span class="nx"&gt;configure&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;initial&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; &lt;span class="nx"&gt;to&lt;/span&gt; &lt;span class="nx"&gt;use&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;all&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="nx"&gt;your&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;repositories&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;which&lt;/span&gt; &lt;span class="nx"&gt;will&lt;/span&gt; &lt;span class="nx"&gt;suppress&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt; &lt;span class="nx"&gt;warning&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nb"&gt;global&lt;/span&gt; &lt;span class="nx"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;defaultBranch&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;Names&lt;/span&gt; &lt;span class="nx"&gt;commonly&lt;/span&gt; &lt;span class="nx"&gt;chosen&lt;/span&gt; &lt;span class="nx"&gt;instead&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;master&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt; &lt;span class="nx"&gt;are&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;main&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;trunk&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt; &lt;span class="nx"&gt;and&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;development&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="nx"&gt;The&lt;/span&gt; &lt;span class="nx"&gt;just&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;created&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt; &lt;span class="nx"&gt;can&lt;/span&gt; &lt;span class="nx"&gt;be&lt;/span&gt; &lt;span class="nx"&gt;renamed&lt;/span&gt; &lt;span class="nx"&gt;via&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt; &lt;span class="nx"&gt;command&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="nx"&gt;hint&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;branch&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;m&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nx"&gt;Initialized&lt;/span&gt; &lt;span class="nx"&gt;empty&lt;/span&gt; &lt;span class="nx"&gt;Git&lt;/span&gt; &lt;span class="nx"&gt;repository&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="sr"&gt;/tmp/&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt;&lt;span class="sr"&gt;/.git/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;解决：&lt;/strong&gt; 执行&lt;code class="language-plaintext highlighter-rouge"&gt;git config --global init.defaultBranch master&lt;/code&gt; 命令，设置默认分支为 master 级别就不会再报错了&lt;/p&gt;
+
+&lt;div class="language-javascript highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;&lt;span class="nx"&gt;git&lt;/span&gt; &lt;span class="nx"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nb"&gt;global&lt;/span&gt; &lt;span class="nx"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;defaultBranch&lt;/span&gt; &lt;span class="nx"&gt;master&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id="git-add-报错"&gt;git add .报错&lt;/h2&gt;
+
+&lt;p&gt;git add .报错 &lt;code class="language-plaintext highlighter-rouge"&gt;warning: adding embedded git repository\:xxxxxxxxxx&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;执行- $ git add .命令时出现出现这个报错&lt;/p&gt;
+
+&lt;div class="language-bash highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;warning: adding embedded git repository:xxxxxxxxxx
+hint: You&lt;span class="s1"&gt;'ve added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: git submodule add &amp;lt;url&amp;gt;xxxxxxxxxx
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: git rm --cached   xxxx
+hint:
+hint: See "git help submodule" for more information.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;原因：&lt;/strong&gt; 使用 &lt;code class="language-plaintext highlighter-rouge"&gt;git add .&lt;/code&gt; 时，出现上述错误。是因为在当前 &lt;code class="language-plaintext highlighter-rouge"&gt;git&lt;/code&gt; 仓库中同时包含有另一个&lt;code class="language-plaintext highlighter-rouge"&gt;git&lt;/code&gt;仓库。如当前仓库目录下的子文件夹内又是一个仓库。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解决：&lt;/strong&gt; 删除子文件夹的.git 文件， 重新执行&lt;code class="language-plaintext highlighter-rouge"&gt;git add .&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id="git-remote-add时报错"&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;时报错：&lt;/h2&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote add origin git@gitee.com:liaoxuefeng/learngit.git
+fatal: remote origin already exists.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这说明本地库已经关联了一个名叫&lt;code class="language-plaintext highlighter-rouge"&gt;origin&lt;/code&gt;的远程库，可以用&lt;code class="language-plaintext highlighter-rouge"&gt;git remote rm &amp;lt;name&amp;gt;&lt;/code&gt;命令已有的远程库。&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote -v
+origin	git@github.com:michaelliao/learngit.git (fetch)
+origin	git@github.com:michaelliao/learngit.git (push)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可以看到，本地库已经关联了&lt;code class="language-plaintext highlighter-rouge"&gt;origin&lt;/code&gt;的远程库，并且，该远程库指向 GitHub。我们可以删除已有的 GitHub 远程库再关联 Gitee 的远程库&lt;/p&gt;
+
+&lt;div class="language-plaintext highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;git remote rm origin
+git remote add origin 仓库地址
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id="git-上传报错"&gt;git 上传报错&lt;/h2&gt;
+
+&lt;h3 id="第一个问题"&gt;第一个问题&lt;/h3&gt;
+
+&lt;p&gt;上传步骤：&lt;br&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;git add .&lt;/code&gt;&lt;br&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;git commit -m "提示消息"&lt;/code&gt;&lt;br&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;git push origin master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;出错：&lt;br&gt;
+&lt;code class="language-plaintext highlighter-rouge"&gt;! [rejected] master -&amp;gt; master (fetch first) error: failed to push some refs to ' 。。。'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;出现这个问题是因为 github 中的 README.md 文件不在本地代码目录中，可以通过如下命令进行代码合并&lt;/p&gt;
+
+&lt;p&gt;&lt;code class="language-plaintext highlighter-rouge"&gt;git pull --rebase origin master&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id="第二个问题"&gt;第二个问题&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class="language-plaintext highlighter-rouge"&gt;! [remote rejected] master -&amp;gt; master (pre-receive hook declined)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在推送代码时报错如上，网上搜到的方法说是项目的 setting 中 master 是受保护的项目，所以开发者无法推送，解决方法是修改 protected 的设置，或者新建一个分支，推送到自己的分支上&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.cnblogs.com/cppeterpan/p/7289266.html" rel="nofollow" target="_blank" class="extlinks"&gt;解决办法的文章&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id="git-push-报错"&gt;git push 报错&lt;/h2&gt;
+
+&lt;p&gt;gitee 第一次提交代码提交不上去，到 push 这一步老是遇到&lt;/p&gt;
+
+&lt;div class="language-javascript highlighter-rouge"&gt;&lt;div class="highlight"&gt;&lt;pre class="highlight"&gt;&lt;code&gt;  &lt;span class="o"&gt;!&lt;/span&gt; &lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;remote&lt;/span&gt; &lt;span class="nx"&gt;rejected&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="nx"&gt;master&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;master &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;hook&lt;/span&gt; &lt;span class="nx"&gt;declined&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;failed&lt;/span&gt; &lt;span class="nx"&gt;to&lt;/span&gt; &lt;span class="nx"&gt;push&lt;/span&gt; &lt;span class="nx"&gt;some&lt;/span&gt; &lt;span class="nx"&gt;refs&lt;/span&gt; &lt;span class="nx"&gt;to&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这种情况，老是提不上去。那是因为。你的邮箱设置，&lt;strong&gt;不公开我的邮箱&lt;/strong&gt;把这个勾上了，取消勾选就行了。这样导致找不到你的远程地址。所以推不上去&lt;/p&gt;
+
+                &lt;div class="post-copyright"&gt;
+                    &lt;p&gt;
+                        &lt;span&gt;版权声明：&lt;/span&gt;
+                        如无特别声明，本文版权归
+                        &lt;a href="https://h2o-ac.pages.dev" class="cplink"&gt;Mr Li&lt;/a&gt;
+                        所有，转载请注明本文链接。
+                    &lt;/p&gt;
+                    
+                    &lt;p&gt;
+                        （采用 
+                        &lt;a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="extlinks"&gt;CC
+                            BY-NC-SA 4.0&lt;/a&gt;
+                        许可协议进行授权）
+                    &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;span&gt;本文标题：&lt;/span&gt;《 git总结 》&lt;/p&gt;
+                    &lt;p&gt;&lt;span&gt;本文链接：&lt;/span&gt;&lt;a href="https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html" class="cplink"&gt;https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html&lt;/a&gt;&lt;/p&gt;
+                    &lt;p class="tips"&gt;本文最后一次更新为 &lt;span&gt;&lt;/span&gt; 天前，文章中的某些内容可能已过时！
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+        
+            &lt;div class="table-of-contents"&gt;
+                &lt;div class="toc-header"&gt;&lt;h2&gt;目录&lt;/h2&gt;&lt;/div&gt;
+                &lt;div class="toc-body"&gt;
+                    &lt;ul&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('总结')"&gt;总结&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('详细步骤')"&gt;详细步骤&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('初始化')"&gt;初始化&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('定位工作目录')"&gt;定位工作目录&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('初始化用户信息')"&gt;初始化用户信息&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('创建本地仓库')"&gt;创建本地仓库&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('暂存区-add')"&gt;暂存区 add&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('提交-commit-记录')"&gt;提交 commit-记录&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('将本地代码仓库关联到-gitee-上&lt;code-class="language-plaintext-highlighter-rouge"&gt;git-remote-add&lt;/code&gt;')"&gt;将本地代码仓库关联到 gitee 上&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('将代码由本地仓库上传到-gitee-远程仓库')"&gt;将代码由本地仓库上传到 gitee 远程仓库&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('git-init-报错')"&gt;git init 报错&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('git-add-.报错')"&gt;git add .报错&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('&lt;code-class="language-plaintext-highlighter-rouge"&gt;git-remote-add&lt;/code&gt;时报错')"&gt;&lt;code class="language-plaintext highlighter-rouge"&gt;git remote add&lt;/code&gt;时报错：&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('git-上传报错')"&gt;git 上传报错&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('第一个问题')"&gt;第一个问题&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('第二个问题')"&gt;第二个问题&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a onclick="scrollToAdjust('git-push-报错')"&gt;git push 报错&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+                &lt;/div&gt;
+        
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+&lt;div class="social-share-wrapper"&gt;
+    &lt;div class="social-share"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/main&gt;
+
+&lt;section class="author-detail"&gt;
+    &lt;section class="post-footer-item author-card"&gt;
+        &lt;div class="avatar"&gt;
+            &lt;img src="/assets/img/profile.webp" alt=""&gt;
+        &lt;/div&gt;
+        &lt;div class="author-name" rel="author"&gt;zhonger&lt;/div&gt;
+        &lt;div class="bio"&gt;
+            &lt;p&gt;全栈开发者，热爱前端、运维和架构设计&lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;ul class="sns-links"&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://scholar.google.com/citations?user=AUupIooAAAAJ" target="_blank" aria-label="google-scholar"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-google-scholar"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://www.researchgate.net/profile/Shengzhou-Li" target="_blank" aria-label="researchgate"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-researchgate"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://orcid.org/0000-0001-6973-3825" target="_blank" aria-label="ORCID"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-ORCID"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://github.com/zhonger" target="_blank" aria-label="github"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-github"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://www.linkedin.com/in/shengzhouli/" target="_blank" aria-label="linkedin"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-linkedin"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+            &lt;li&gt;
+                &lt;a href="https://segmentfault.com/u/wuwozhonger" target="_blank" aria-label="segmentfault"&gt;
+                    &lt;svg class="icon" aria-hidden="true"&gt;
+                        &lt;use xlink:href="#icon-segmentfault"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            
+        &lt;/ul&gt;
+        
+    &lt;/section&gt;
+    &lt;section class="post-footer-item read-next"&gt;
+        
+        &lt;div class="read-next-item"&gt;
+            &lt;a href="/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html" class="read-next-link" aria-label="H2O-ac主题设置"&gt;&lt;/a&gt;
+            &lt;section&gt;
+                &lt;span&gt;H2O-ac主题设置&lt;/span&gt;
+                &lt;p&gt;config.yml文件```站点信息，对 SEO 比较重要title: ‘Hin小站’    # 站点名称des...&lt;/p&gt;
+            &lt;/section&gt;
+            
+        &lt;/div&gt;
+        
+
+        
+        &lt;div class="read-next-item"&gt;
+            &lt;a href="/test/test-en.html" class="read-next-link"
+                aria-label="Test en"&gt;&lt;/a&gt;
+            &lt;section&gt;
+                &lt;span&gt;Test en&lt;/span&gt;
+                &lt;p&gt;Chapter 1&lt;/p&gt;
+            &lt;/section&gt;
+            
+            &lt;div class="filter"&gt;&lt;/div&gt;
+            &lt;img src="https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a" alt=""&gt;
+            
+        &lt;/div&gt;
+        
+    &lt;/section&gt;
+    
+
+
+    
+        
+&lt;section class="post-footer-item comment"&gt;
+    &lt;div class="comments-headline"&gt;
+        &lt;svg class="icon" aria-hidden="true"&gt;
+            &lt;use xlink:href="#icon-comment"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span&gt;评论&lt;/span&gt;
+    &lt;/div&gt;
+    
+        
+        &lt;div id="comments-switch"&gt;
+            &lt;span class="first-comment"&gt;Disqus&lt;/span&gt;
+            &lt;span class="switch-button"&gt;
+                &lt;input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox"&gt;
+                &lt;label for="cmn-toggle-4"&gt;&lt;/label&gt;
+            &lt;/span&gt;
+            &lt;span class="second-comment"&gt;Waline&lt;/span&gt;
+        &lt;/div&gt;
+        
+    
+&lt;/section&gt;
+
+    
+
+
+
+    
+    &lt;section class="post-footer-item comment"&gt;
+        &lt;div id="disqus_thread"&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    
+    
+    &lt;section class="post-footer-item comment"&gt;
+        &lt;div id="waline"&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    
+
+&lt;/section&gt;
+          &lt;/div&gt;
+          
+        &lt;/div&gt;'
+      default_title: ''
+    note:
+      default_title: 'Note'
+    info:
+      default_title: 'Info'
+    warning:
+      default_title: 'Warning'
+    error:
+      default_title: 'Error'
+plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-sitemap, premonition, h2o-ac-jekyll-extlinks]
+exclude: ['node_modules', 'dev', 'package.json', 'webpack.config.js', '.gitignore', 'README.md', '*.gemspec', '*.gem']
+
+#### 功能区
+webpusher: '{GIVEN WEBPUSHER ID}'  # 动态消息、通知推送，定义时自动开启。
+##### PWA，渐进式网站应用
+# pwa:
+#   color: '#81BBFF'      # 主题色
+#   short_name: 'h2o-ac'  # 应用缩写或应用名
+##### 搜索功能
+search: true    # 是否启用搜索
+search_type: docsearch   # 默认为 default 即简单搜索，自 v1.3.2 后可用 DocSearch 搜索。
+docsearch:                     # DocSearch 搜索配置节
+  appId: '{GIVEN APPID}'       # 获取的应用 ID
+  apiKey: '{GIVEN API KEY}'    # 获取的应用 Key
+  indexName: 'indexName'       # 获取的索引空间名
+#### 评论功能
+comments:
+#   disqus: false   # 是否开启 Disqus 评论
+#   disqus_url: 'https://h2o-ac.disqus.com/embed.js'  # Disqus 链接
+#   waline: false   # 是否开启 Waline 评论
+#   waline_url: 'https://h2o-ac-waline.deta.dev/'     # Waline 链接
+#   waline_reaction: false  # 是否开启 Waline 表情反馈，以下为自定义本地化配置。
+#   waline_locale: "{reaction0: '赞一个', reaction1: '踩一下', reaction2: '有点酷', reaction3: '看不懂', reaction4: '啥玩意', reaction5: '想睡觉'}"
+#### 站点统计功能
+# cnzz:  '111111111'                   # CNZZ 站长统计
+# busuanzi: false                       # Busuanzi 不蒜子统计
+# google_analytics: 'UA-111111111-1'   # 谷歌统计分析
+# google_search: '{GIVEN LONG STRING}' # 谷歌搜索验证所有权
+# umami:                               # Umami 统计
+#   status: true
+#   id: '{Umami ID}'
+#   js: 'https://umami.jekyll-theme-h2o-ac.com/umami.js'
 </code></pre></div></div>
+
+                <div class="post-copyright">
+                    <p>
+                        <span>版权声明：</span>
+                        如无特别声明，本文版权归
+                        <a href="https://h2o-ac.pages.dev" class="cplink">Mr Li</a>
+                        所有，转载请注明本文链接。
+                    </p>
+                    
+                    <p>
+                        （采用 
+                        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="extlinks">CC
+                            BY-NC-SA 4.0</a>
+                        许可协议进行授权）
+                    </p>
+                    
+                    <p><span>本文标题：</span>《 H2O-ac主题设置 》</p>
+                    <p><span>本文链接：</span><a href="https://h2o-ac.pages.dev/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html" class="cplink">https://h2o-ac.pages.dev/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html</a></p>
+                    <p class="tips">本文最后一次更新为 <span></span> 天前，文章中的某些内容可能已过时！
+                    </p>
+                </div>
+            </article>
+        </div>
+        
+            <div class="table-of-contents">
+                <div class="toc-header"><h2>目录</h2></div>
+                <div class="toc-body">
+                    <ul><li><a onclick="scrollToAdjust('config.yml文件')">config.yml文件</a></li></ul>
+                </div>
+        
+            </div>
+        </div>
+        
+<div class="social-share-wrapper">
+    <div class="social-share"></div>
+</div>
+
+</main>
+
+<section class="author-detail">
+    <section class="post-footer-item author-card">
+        <div class="avatar">
+            <img src="/assets/img/profile.webp" alt="">
+        </div>
+        <div class="author-name" rel="author">zhonger</div>
+        <div class="bio">
+            <p>全栈开发者，热爱前端、运维和架构设计</p>
+        </div>
+        
+        <ul class="sns-links">
+            
+            <li>
+                <a href="https://scholar.google.com/citations?user=AUupIooAAAAJ" target="_blank" aria-label="google-scholar">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-google-scholar"></use>
+                    </svg>
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://www.researchgate.net/profile/Shengzhou-Li" target="_blank" aria-label="researchgate">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-researchgate"></use>
+                    </svg>
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://orcid.org/0000-0001-6973-3825" target="_blank" aria-label="ORCID">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ORCID"></use>
+                    </svg>
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://github.com/zhonger" target="_blank" aria-label="github">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://www.linkedin.com/in/shengzhouli/" target="_blank" aria-label="linkedin">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://segmentfault.com/u/wuwozhonger" target="_blank" aria-label="segmentfault">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-segmentfault"></use>
+                    </svg>
+                </a>
+            </li>
+            
+        </ul>
+        
+    </section>
+    <section class="post-footer-item read-next">
+        
+
+        
+        <div class="read-next-item">
+            <a href="/git%E6%80%BB%E7%BB%93.html" class="read-next-link"
+                aria-label="git总结"></a>
+            <section>
+                <span>git总结</span>
+                <p>总结</p>
+            </section>
+            
+        </div>
+        
+    </section>
+    
+
+
+    
+        
+<section class="post-footer-item comment">
+    <div class="comments-headline">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-comment"></use>
+        </svg>
+        <span>评论</span>
+    </div>
+    
+        
+        <div id="comments-switch">
+            <span class="first-comment">Disqus</span>
+            <span class="switch-button">
+                <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                <label for="cmn-toggle-4"></label>
+            </span>
+            <span class="second-comment">Waline</span>
+        </div>
+        
+    
+</section>
+
+    
+
+
+
+    
+    <section class="post-footer-item comment">
+        <div id="disqus_thread"></div>
+    </section>
+    
+    
+    <section class="post-footer-item comment">
+        <div id="waline"></div>
+    </section>
+    
+
+</section>
+            
+
+
+<footer class="g-footer">
+  <div class="g-container">
+    <div class="g-left">
+      <section class="links">
+        本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 和 (基于 <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank" class="extlinks">H2O</a> 的) <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> 强力驱动
+         (<a href="https://github.com/zhonger/jekyll-theme-H2O-ac/releases/tag/v1.3.5" target="_blank" class="extlinks">v1.3.5</a>)  
+        
+      </section>
+      <section class="links">Mr Li ©
+        
+        
+          2015
+          -
+        
+        2024
+        
+          <a href="https://beian.miit.gov.cn/" target="_blank" class="extlinks">沪ICP备xxxxxxxx号</a>
+        
+        <a href="/rss.xml" target="_blank" aria-label="Terms of Service" class="others">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-rss"></use>
+          </svg> RSS  
+        </a>
+        <a href="/tos" target="_blank" aria-label="Terms of Service" class="others">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-tos"></use>
+          </svg> 使用条款  
+        </a>
+      </section>
+      
+      <section class="links">
+        <span id="busuanzi_container_site_pv">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-pv"></use>
+          </svg> 总浏览量 <span id="busuanzi_value_site_pv"></span> <b>·</b>
+        </span>
+        <span id="busuanzi_container_site_uv">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-user"></use>
+          </svg> 总访问量 <span id="busuanzi_value_site_uv"></span>
+        </span>
+      </section>
+      
+      <section>
+        
+          本站已运行 
+          <span class="alivetime_days"></span> 天
+          <span class="alivetime_hours"></span> 小时
+          <span class="alivetime_minutes"></span> 分
+          <span class="alivetime_seconds"></span> 秒
+        
+      </section>
+    </div>
+    <div class="g-right">
+      
+      <section>
+        <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" class="extlinks">CDN 加速/云存储服务提供商 <img src="/assets/icons/upyun.png" class="upyun" alt="upyun" /></a>
+      </section>
+      
+      
+      <section class="badges">
+        
+          <a href="https://www.foreverblog.cn/" target="_blank" class="foreverblog" aria-label="foreverblog"> 
+            <img src="https://img.foreverblog.cn/logo_en_default.png" alt=""> 
+          </a>
+        
+        
+          <a href="https://www.foreverblog.cn/go.html" target="_blank" class="wormhole" aria-label="wormhole"> 
+            <img src="https://img.foreverblog.cn/wormhole_3.gif" alt="" title="穿梭虫洞-随机访问十年之约友链博客">
+          </a>
+        
+        
+          <a href="https://www.travellings.cn/go.html" target="_blank" class="travelling-badge" aria-label="Travelling" rel="noopener" title="开往-友链接力">
+            <img src="https://cdn.jsdelivr.net/gh/travellings-link/travellings/assets/logo.gif" alt="开往-友链接力">
+          </a>
+        
+        
+          <a href="https://notbyai.fyi/" target="_blank" class="notbyAI" aria-label="notbyAI"> 
+            <img src="/assets/icons/notbyAI-white.png" alt="Written by Human, Not by AI">
+          </a>
+        
+      </section>
+      
+    </div>
+    
+  </div>
+</footer>
+<div class="cookie-tip">
+   为了提升本站的使用体验和必要功能的正常使用，本站会使用本地 Cookie。详细请查看「 <a href="/tos.html">本站使用条款</a> 」了解更多。
+
+  <button id="accept-tos">同意</button>
+</div>
+
+<section id="tools">
+  
+  
+  <div class="tool toc">
+    <svg class="icon b1 active" aria-hidden="true">
+      <use xlink:href="#icon-toc"></use>
+    </svg>
+    <svg class="icon b2" aria-hidden="true">
+      <use xlink:href="#icon-exit"></use>
+    </svg>
+  </div>
+  
+</section>
+<section id="bttb" aria-label="Scroll back to top" class="bttb">
+  <div class="tool">
+    <svg class="icon top" aria-hidden="true">
+      <use xlink:href="#icon-top"></use>
+    </svg>
+  </div>
+</section>
+        </div>
+        
+<div class="modal">
+    <div class="modal-content">
+        <header>
+            <span class="close">&times;</span>
+        </header>
+        <div class="container"></div>
+    </div>
+</div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async></script>
+        
+            <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/customParseFormat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/relativeTime.js"></script>
+<script>
+    $(document).ready(function () {
+        var time_formats = ['YYYY-MM-DD HH:mm:ss ZZ', 'YYYY DD MMM HH:mm:ss ZZ', 'YYYY年MM月DD日 HH:mm:ss ZZ'];
+        function dateFormat(date, format) {
+            var date_org = dayjs(date, time_formats[format]);
+            var date = date_org.format(time_formats[format]);
+            return { "date_org": date_org, "date": date }
+        }
+
+        dayjs.extend(window.dayjs_plugin_customParseFormat);
+        dayjs.extend(window.dayjs_plugin_relativeTime);
+        var post_date = $("meta[property='post-date']").attr('content');
+        var post_date_format = $("meta[property='post-date-format']").attr('content');
+        var local_post_date = dateFormat(post_date, post_date_format);
+
+        $(".post time span.create-at").html(local_post_date["date"]);
+
+        fetch("https://api.github.com/repos/zhonger/jekyll-theme-H2O-ac/commits?path=_posts/2024-10-24-主题设置.md").then((response) => {
+            return response.json();
+        }).then((commits) => {
+            if (commits.length != 0) {
+                var update_at = dayjs(commits[0]['commit']['committer']['date']);
+            } else {
+                var update_at = post_date
+            }
+
+            var local_update_at = dateFormat(update_at, post_date_format);
+            $('.post time span.update-at').html(local_update_at["date"]);
+
+            var relative_time = dayjs().diff(local_update_at["date_org"], 'day');
+            $(".post-copyright .tips span").append(relative_time);
+            if (relative_time > 365) {
+                $(".post-copyright .tips").addClass("active");
+            }
+        });
+    });
+</script>
+            <script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
+<script>
+    socialShare('.social-share', {
+        sites: [
+            
+            'wechat', 
+            
+            'weibo', 
+            
+            'douban', 
+            
+            'twitter'
+            
+        ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+        wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+      });
+    $("a.social-share-icon").each(function () {
+        $(this).attr("aria-label", $(this).attr("class").split(' ')[1])
+    });
+</script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script>
+        <script>
+            /**
+            * Better Scroll Experience
+            */
+            function scrollToAdjust(id){
+              var element = document.getElementById(id);
+              var headerOffset = 90;
+              var elementPosition = element.getBoundingClientRect().top;
+              var offsetPosition = elementPosition + window.scrollY - headerOffset;
+              window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth"
+              });
+            }
+        </script>
+        <script src="/assets/js/app.min.js"></script>
+        <script src="https://at.alicdn.com/t/c/font_3046306_ujr2yq34hw.js"></script>
+        
+
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+        
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax-full@3.2.2/es5/tex-mml-svg.min.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [['$', '$'], ["\\(", "\\)"]],
+			processEscapes: true,
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+      });
+    </script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var baseurl = $("meta[property='og:baseurl']").attr('content');
+        $("p img").each(function () {
+            $(this).attr('data-src', $(this).attr('src')).removeAttr('src').addClass("lazyload").attr('src', baseurl + '/assets/img/loading.gif');
+            var strA = "<a data-fancybox='gallery' ref='gallery' href='" + $(this).attr('data-src') + "' data-caption='" + $(this).attr('alt') + "'></a>";
+            $(this).wrapAll(strA);
+            var caption = $(this)[0].alt;
+            $(this).parent().after('<span class="caption">' + caption + '</span>');
+        });
+        Fancybox.bind('[data-fancybox]', {
+            on: {
+                load: (fancybox, slide) => {
+                    var gray = $("meta[property='og:gray']").attr('content');
+                    if (gray == "true") {
+                        $(".fancybox__content img").addClass("gray");
+                        $(".carousel__track .fancybox__thumb").addClass("gray");
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/hotkeys-js/dist/hotkeys.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var previous_url = $("meta[property='og:previous_url']").attr('content');
+        var next_url = $("meta[property='og:next_url']").attr('content');
+
+        hotkeys('left', function (event, handler) {
+            // Prevent the default refresh event under WINDOWS system
+            event.preventDefault();
+            if (previous_url) {
+                console.log('you pressed left!');
+                window.location.href = previous_url;
+            } else {
+                $("#no-previous").addClass("active");
+                setTimeout(function () { $("#no-previous").removeClass("active"); }, 1500);
+            }
+        });
+
+        hotkeys('right', function (event, handler) {
+            // Prevent the default refresh event under WINDOWS system
+            event.preventDefault();
+            if (next_url) {
+                console.log('you pressed right!');
+                window.location.href = next_url;
+            } else {
+                $("#no-next").addClass("active");
+                setTimeout(function () { $("#no-next").removeClass("active"); }, 1500);
+            }
+        });
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.6/dist/mermaid.min.js"></script>
+<script>
+    $(document).ready(function () {
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: "default",
+        });
+        mermaid.init(undefined, $('.mermaid2'));
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+        
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://h2o-ac.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.umd.js"></script>
+<script>
+    $(document).ready(function () {
+        Waline.init({
+            el: '#waline',
+            serverURL: 'https://h2o-ac-waline.deta.dev/',
+            reaction: true,
+        comment: true,
+        locale: {reaction0: '赞一个', reaction1: '踩一下', reaction2: '有点酷', reaction3: '看不懂', reaction4: '啥玩意', reaction5: '想睡觉'}
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        if ($("#comments-switch").length > 0) {
+            var comment_status = $("#cmn-toggle-4")[0].checked;
+            if (comment_status) {
+                $("#waline").addClass("active");
+            } else {
+                $("#disqus_thread").addClass("active");
+            }
+            $("#cmn-toggle-4").click(function () {
+                $("#disqus_thread").toggleClass("active");
+                $("#waline").toggleClass("active");
+            })
+        } else {
+            if ($("#disqus_thread").length > 0) {
+                $("#disqus_thread").addClass("active");
+            } else if ($("#waline").length > 0) {
+                $("#waline").addClass("active");
+            }
+        }
+    })
+</script>
+        <script>
+    if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+            console.log("An active service worker found, no need to register");
+        } else {
+            // Register the service worker
+            navigator.serviceWorker
+            .register("/sw.js", {
+                scope: "/"
+            })
+            .then(function (reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    }
+
+// 检测浏览器是否支持SW
+// if(navigator.serviceWorker != null){
+//     navigator.serviceWorker.register("/sw.js")
+//         .then(function(registartion){
+//             console.log('支持sw:',registartion.scope)
+//         })
+// } else {
+//     console.log('不支持sw')
+// }
+</script>
+        
+<!-- start webpushr code --> <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BKfCOgmaRwWSMgx0RID3WIvqMSIHnVoL8fK7YfB8jeh2SgSEzWcvhhsxW2EmVl99Q-5f3KlxHUN4MxDIhgajiTo' });</script><!-- end webpushr code -->
+
+        
+  </body>
+
+</html>

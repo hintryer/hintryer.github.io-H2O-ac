@@ -5,9 +5,1308 @@
     <description>个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。</description>
     <link>https://h2o-ac.pages.dev//</link>
     <atom:link href="https://h2o-ac.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 24 Oct 2024 08:24:25 +0000</pubDate>
-    <lastBuildDate>Thu, 24 Oct 2024 08:24:25 +0000</lastBuildDate>
+    <pubDate>Sat, 26 Oct 2024 11:15:25 +0000</pubDate>
+    <lastBuildDate>Sat, 26 Oct 2024 11:15:25 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>H2O-ac主题设置</title>
+        <description>&lt;h2 id=&quot;configyml文件&quot;&gt;config.yml文件&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#### 站点信息，对 SEO 比较重要
+title: &apos;Hin小站&apos;    # 站点名称
+description: &apos;时间太瘦，指缝太宽。&apos;   # 站点描述
+keyword: &apos;Hin, 小站&apos;    # 关键词
+url: &apos;https://hintryer.github.io/&apos;    # 站点域名
+baseurl: &apos;&apos;     # 可选，站点子目录（适用于部署在子目录）
+favicon: &apos;/favicon.ico&apos;    # 站点浏览器图标，可以是外部链接
+gray: false  # 全站变灰，可用于国家公祭日等哀悼场合。
+
+#### 博主信息
+author: &apos;Hin&apos;     # 作者
+nickname: &apos;Hin&apos;   # 昵称
+bio: &apos;人类美学的奇迹&apos;   # 一句话描述
+avatar: &apos;/assets/img/profile.webp&apos;   # 头像，可以是外部链接
+# sns:   # 彩色社交图标，默认无配置，按需添加。
+#   google-scholar: &apos;https://scholar.google.com/&apos;        # 谷歌学术链接
+#   researchgate: &apos;https://www.research.net/profile/&apos;    # ResearchGate 链接
+#   ORCID: &apos;https://orcid.org/&apos;                          # ORCID 链接
+#   github: &apos;https://github.com/zhonger&apos;                 # Github 链接
+#   linkedin: &apos;https://www.linkedin.com/in/&apos;             # 领英链接
+#   segmentfault: &apos;https://segmentfault.com/u/&apos;          # SegmentFault 链接
+#   email: &apos;i@jekyll-theme-h2o-ac.com&apos;   # 邮箱
+#   weibo: &apos;https://weibo.com/username&apos;  # 微博链接
+#   zhihu: &apos;https://zhihu.com&apos;           # 知乎链接
+#   twitter: &apos;https://twitter.com&apos;       # 推特链接
+#   instagram: &apos;https://instagram.com&apos;   # Instagram 链接
+#   juejin: &apos;https://juejin.com&apos;         # 掘金链接
+#   douban: &apos;https://douban.com&apos;         # 豆瓣网链接
+#   facebook: &apos;https://facebook.com&apos;     # 脸书链接
+#   dribble: &apos;https://dribble.com&apos;       # Dribble 链接
+#   uicn: &apos;https://www.ui.cn&apos;            # UI 中国链接
+#   jianshu: &apos;https://jianshu.com&apos;       # 简书链接
+#   medium: &apos;https://medium.com&apos;         # Medium 链接
+
+
+#### 主题信息
+version: 1.3.5          # 主题版本，无须自行设置，请采用默认配置。
+theme-color: default    # 站点主题色，默认（蓝色，default）和粉色（pink）
+postPatters: &apos;circuitBoard&apos; # 页面封面默认模式，仅在未定义封面图时生效。
+# 支持 circuitBoard，overlappingCircles，food，
+# glamorous，ticTacToe，seaOfClouds 五种。
+nightMode: false        # 夜间模式是否默认开启
+tos: /tos.html          # 站点服务条款链接
+permalink: /:categories/:title.html  # 文章页自动生成规则
+mathjax: true   # 是否开启 MathJax 公式支持
+RSS: false       # 是否开启 RSS 生成，robots.txt 和 sitemap.xml 文件。
+timezone: Asia/Tokyo  # 默认时区
+formats:    # 各种格式
+  time: 0   # 时间格式，0 -- 2022-04-29  1 -- 29 Apr 2022  2 -- 2022年4月29日
+##### 顶部导航栏，键值对定义显示名称与链接，可以是中文名（需使用引号）。
+nav:                    
+  首页: &apos;/&apos;               
+  博客: &apos;/blog/index.html&apos;
+  归档: &apos;/archives.html&apos;
+  标签: &apos;/tags.html&apos;
+  工具:
+    RSS: &apos;/feed.xml&apos;
+    CV: &apos;/cv.html&apos;
+    links: &apos;/links.html&apos;
+##### 侧边栏配置
+links: # 友情链接（侧边栏），键值对定义显示名称与链接，可以是中文名（需使用引号）。
+  &apos;Mr Li&apos;: &apos;https://lisz.me&apos;
+  &apos;H2O-ac 设置&apos;: &apos;https://h2o-ac-doc.lisz.me/&apos; 
+calendar: false  # 是否开启文章发表日历（侧边栏与归档页）
+recommend-tags: true           # 是否显示推荐便签
+recommend-condition-size: 12   # 显示推荐标签数量
+##### 底部版权栏
+footer:          # 底部信息
+  since: 2024    # 站点建站年份，用于显示版权起始时间。
+alivetime: false  # 是否开启实时计算站点存活时间（底部）
+alivestart: &quot;12/23/2021&quot; # 站点建站年月日，用于实时计算站点存活时间。
+supports: # 赞助商徽章
+  upyun: false              # 又拍云
+  webify: false            # 腾讯云 Webify
+badges:  # 其他徽章
+  foreverblog: false        # Foreverblog
+  wormhole: false           # Wormhole
+  travelling: false         # Travelling
+  notbyAI: false            # NotByAI
+cclicense: false  # 是否以 Creative Commons 协议共享文章内容版权
+# beian: &apos;沪ICP备xxxxxxxx号&apos;  # ICP 备案信息
+##### 国际化
+languages: [&apos;zh-Hans&apos;, &apos;zh-Hant&apos;, &apos;en&apos;, &apos;ja&apos;]  # 国际化语言支持列表
+default_lang: &apos;zh-Hans&apos;  # 默认语言
+#### 文章最近更新时间自动更新
+github:
+  enabled: true                       # 是否开启
+  owner: hintryer                     # Github 命名空间，用户名或组织名
+  repository: hintryer.github.io      # 项目名
+toc: true  # 是否开启文章页目录导航
+social-share: false      # 是否开启社交分享
+social-share-items: [&apos;wechat&apos;, &apos;weibo&apos;, &apos;douban&apos;, &apos;twitter&apos;] # 社交分享列表
+# 绝大多数社交媒体均支持。考虑到该功能的鸡肋，未来可能会移除。
+#### Markdown
+markdown: kramdown    # Markdown 语法解析器
+kramdown:             # Markdown 语法解析器配置
+  input: GFM
+highlighter: rouge    # 代码高亮解析器
+prism:                # 代码高亮主题配置节
+  theme: one-light    # 代码高亮主题，支持所有官方主题
+  line_numbers: true  # 是否开启代码行号
+mermaid: true         # 是否开启代码流程图支持，可以根据符合 mermaid 语法的代码画图。
+extlinks:             # 区分站内链接与站外链接
+  attributes: {rel: nofollow, target: _blank, class: extlinks}  # 站外链接配置
+  rel_exclude: [&apos;host1.com&apos;, &apos;host2.net&apos;]  # 可以被认为是站内链接的多域名配置
+premonition:    # 支持五种提示框，note、info、warning、error、citation。
+  default:      # 一般采用默认配置即可，无须自定义修改。
+    template: &apos;&amp;lt;div class=&quot;premonition &quot;&amp;gt;
+          &amp;lt;div class=&quot;header&quot;&amp;gt;
+            &amp;lt;svg class=&quot;icon &quot; aria-hidden=&quot;true&quot;&amp;gt;
+                &amp;lt;use xlink:href=&quot;#icon-&quot;&amp;gt;&amp;lt;/use&amp;gt;
+            &amp;lt;/svg&amp;gt;
+            &amp;lt;div class=&quot;title&quot;&amp;gt;  &amp;lt;/div&amp;gt;
+          &amp;lt;/div&amp;gt;
+          &amp;lt;div class=&quot;content&quot;&amp;gt;
+            
+
+
+&amp;lt;div class=&quot;g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover&quot;
+    data-theme=&quot;default&quot;&amp;gt;
+    &amp;lt;div class=&quot;post-wrapper&quot;&amp;gt;
+        &amp;lt;div class=&quot;post-tags&quot;&amp;gt;
+            
+        &amp;lt;/div&amp;gt;
+        &amp;lt;h1&amp;gt;git总结&amp;lt;/h1&amp;gt;
+        &amp;lt;div class=&quot;post-meta&quot;&amp;gt;
+            &amp;lt;span class=&quot;post-meta-item&quot;&amp;gt;
+                &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                    &amp;lt;use xlink:href=&quot;#icon-user&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                &amp;lt;/svg&amp;gt;
+                zhonger
+            &amp;lt;/span&amp;gt;
+            &amp;lt;time class=&quot;post-meta-item&quot; datetime=&quot; 24-10-24&quot;&amp;gt;
+                &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                    &amp;lt;use xlink:href=&quot;#icon-calendar&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                &amp;lt;/svg&amp;gt;
+                &amp;lt;span class=&quot;create-at&quot;&amp;gt;&amp;lt;/span&amp;gt;
+            &amp;lt;/time&amp;gt;
+            &amp;lt;time class=&quot;post-meta-item&quot; datetime=&quot; 24-10-24&quot;&amp;gt;
+                &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                    &amp;lt;use xlink:href=&quot;#icon-update&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                &amp;lt;/svg&amp;gt;
+                &amp;lt;span class=&quot;update-at&quot;&amp;gt;&amp;lt;/span&amp;gt;
+            &amp;lt;/time&amp;gt;
+            &amp;lt;span class=&quot;post-meta-item&quot;&amp;gt;
+                &amp;lt;svg class=&quot;icon words&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                    &amp;lt;use xlink:href=&quot;#icon-words&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                &amp;lt;/svg&amp;gt;
+                
+                本文总共  5.2k  字 &amp;lt;/span&amp;gt;
+                    &amp;lt;span class=&quot;post-meta-item&quot;&amp;gt;
+                        &amp;lt;svg class=&quot;icon time&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                            &amp;lt;use xlink:href=&quot;#icon-time&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                        &amp;lt;/svg&amp;gt;
+                        阅读全文大约需要 15 分钟
+                    &amp;lt;/span&amp;gt;
+                    
+                    &amp;lt;span class=&quot;post-meta-item&quot;&amp;gt;
+                        &amp;lt;svg class=&quot;icon pv&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                            &amp;lt;use xlink:href=&quot;#icon-pv&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                        &amp;lt;/svg&amp;gt;
+                        本文总阅读量 &amp;lt;span id=&quot;busuanzi_value_page_pv&quot;&amp;gt;&amp;lt;/span&amp;gt; 次
+                    &amp;lt;/span&amp;gt;
+                    
+                    
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+&amp;lt;/div&amp;gt;
+
+&amp;lt;main class=&quot;post-content visible&quot;&amp;gt;
+    
+
+    
+
+    &amp;lt;div class=&quot;container&quot;&amp;gt;
+        
+&amp;lt;div class=&quot;submenu hidden&quot;&amp;gt;
+
+&amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;contents&quot;&amp;gt;
+            &amp;lt;article class=&quot;markdown-body post&quot;&amp;gt;
+                
+
+
+                &amp;lt;h2 id=&quot;总结&quot;&amp;gt;总结&amp;lt;/h2&amp;gt;
+
+&amp;lt;div class=&quot;language-javascript highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;init&amp;lt;/span&amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git add .
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git commit -m &quot;提交说明&quot;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote rm origin
+git remote add origin git@gitee.com:mroph/novel.git
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git pull --rebase origin master
+git push -u origin master
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;h2 id=&quot;详细步骤&quot;&amp;gt;详细步骤&amp;lt;/h2&amp;gt;
+
+&amp;lt;h3 id=&quot;初始化&quot;&amp;gt;初始化&amp;lt;/h3&amp;gt;
+
+&amp;lt;h4 id=&quot;定位工作目录&quot;&amp;gt;定位工作目录&amp;lt;/h4&amp;gt;
+
+&amp;lt;p&amp;gt;打开 Git Bash 终端，使用 &amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;cd&amp;lt;/code&amp;gt;命令加上要切换的路径，例如：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;cd /c/Users/username/Documents&amp;lt;/code&amp;gt;；按下回车键，即可切换到指定的路径。需要注意的是路径中需要使用正斜杠 / 分隔路径，而不是反斜杠 \。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;使用&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;pwd&amp;lt;/code&amp;gt;可以显示当前路径&amp;lt;/p&amp;gt;
+
+&amp;lt;h4 id=&quot;初始化用户信息&quot;&amp;gt;初始化用户信息&amp;lt;/h4&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git config --global user.name &apos;better&apos;
+git config --global user.email &apos;1063266220@qq.com&apos;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;h3 id=&quot;创建本地仓库&quot;&amp;gt;创建本地仓库&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;创建本地仓库的方法有两种：&amp;lt;/p&amp;gt;
+
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;一种是创建全新的仓库：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git init&amp;lt;/code&amp;gt;，会在当前目录初始化创建仓库，也可指定目录：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git init [文件目录]&amp;lt;/code&amp;gt;执行命令后，如下显示&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;$ git init
+Initialized empty Git repository in /Users/michael/learngit/.git/
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;创建完多出了一个被隐藏的.git 目录，这就是本地仓库 Git 的工作场所，而且是一个空的仓库（empty Git repository）。没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 Git 仓库给破坏了。&amp;lt;/p&amp;gt;
+
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;另一种是克隆远程仓库：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git clone [url]&amp;lt;/code&amp;gt;
+克隆远程仓库，如在 github 上创建的仓库“&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;https://github.com/kwonganding/KWebNote.git&amp;lt;/code&amp;gt;”&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;$ git clone &apos;https://github.com/kwonganding/KWebNote.git&apos;
+Cloning into &apos;KWebNote&apos;...
+remote: Enumerating objects: 108, done.
+remote: Counting objects: 100% (108/108), done.
+remote: Compressing objects: 100% (60/60), done.
+remote: Total 108 (delta 48), reused 88 (delta 34), pack-reused 0
+Receiving objects: 100% (108/108), 9.36 KiB | 736.00 KiB/s, done.
+Resolving deltas: 100% (48/48), done.
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;会在当前目录下创建“KWebNote”项目目录。&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;暂存区-add&quot;&amp;gt;暂存区 add&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;把工作区变化放到暂存区中，执行命令&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add .&amp;lt;/code&amp;gt;可以一次性把所有变化文件放入暂存区&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;$ git add .
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;执行上面的命令，没有任何显示，说明添加成功。也可以先执行&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git rm --cached &amp;amp;lt;file&amp;amp;gt;&amp;lt;/code&amp;gt;命令将指定的&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;file&amp;lt;/code&amp;gt;从当前的暂存区中删除但保留文件在本地工作目录中。
+| &amp;lt;strong&amp;gt;指令&amp;lt;/strong&amp;gt; | &amp;lt;strong&amp;gt;描述&amp;lt;/strong&amp;gt; |
+| — | — |
+| git add [file1] [file2] | 添加文件到暂存区，包括修改的文件、新增的文件 |
+| git add [dir] | 同上，添加目录到暂存区，包括子目录 |
+| git add . | 同上，添加&amp;lt;strong&amp;gt;所有&amp;lt;/strong&amp;gt;修改、新增文件（未跟踪）到暂存区 |
+| git rm [file] | 删除工作区文件，并且将这次删除放入暂存区 |
+|git rm –cached [file]|删除放入暂存区 ，但该文件会保留在工作区|&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;提交-commit-记录&quot;&amp;gt;提交 commit-记录&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;把暂存区内容提交到版本库，命令如下（此处文字说明可以不加引号）&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git commit -m &apos;提交的内容说明&apos;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;执行上面的命令，如下显示&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;$ git commit -m &quot;wrote a readme file&quot;
+[master (root-commit) eaadf4e] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git commit&amp;lt;/code&amp;gt;命令执行成功后会告诉你，&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;1 file changed&amp;lt;/code&amp;gt;：1 个文件被改动（我们新添加的 readme.txt 文件）；&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;2 insertions&amp;lt;/code&amp;gt;：插入了两行内容（readme.txt 有两行内容）。
+以上命令相当于存档了一次，在版本库中产生一次提交记录并生成版本号。本次存档，不耽误我们在工作区 (项目文件夹) 下继续编写项目&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;如果改的代码过多，忘记改过哪些了，可以运行&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git status&amp;lt;/code&amp;gt;命令来查看 git 仓库变化，只能看未提交的所有变更的文件状态
+| &amp;lt;strong&amp;gt;指令&amp;lt;/strong&amp;gt; | &amp;lt;strong&amp;gt;描述&amp;lt;/strong&amp;gt; |
+| — | — |
+| git commit -m ‘说明’ | 提交变更，参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;-m&amp;lt;/code&amp;gt;设置提交的描述信息，应该正确提交，不带该参数会进入说明编辑模式 |
+| git commit -a | 参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;-a&amp;lt;/code&amp;gt;，表示直接从工作区提交到版本库，略过了&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add&amp;lt;/code&amp;gt;步骤，不包括新增的文件 |
+| git commit [file] | 提交暂存区的指定文件到仓库区 |
+| git commit –amend -m | 使用一次新的&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;commit&amp;lt;/code&amp;gt;，替代上一次提交，会修改&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;commit&amp;lt;/code&amp;gt;的&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;hash&amp;lt;/code&amp;gt;值（id） |
+| git &amp;lt;strong&amp;gt;reflog&amp;lt;/strong&amp;gt; | 查看所有可用的历史版本记录（实际是 HEAD 变更记录），包含被回退的记录（&amp;lt;strong&amp;gt;重要&amp;lt;/strong&amp;gt;） |
+| git status | 查看本地仓库状态，比较常用的指令，加参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;-s&amp;lt;/code&amp;gt;简洁模式 |&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;将本地代码仓库关联到-gitee-上git-remote-add&quot;&amp;gt;将本地代码仓库关联到 gitee 上&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;第一次提交直接执行以下命令关联&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt; git remote add origin 仓库地址
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;此后，每次本地提交后，只要有必要，就可以使用命令&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git push origin master&amp;lt;/code&amp;gt;推送最新修改；&amp;lt;/p&amp;gt;
+
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;第二次提交先删除，再关联&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote rm origin
+git remote add origin 仓库地址
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;否则会在使用命令&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;时报错：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;fatal: remote origin already exists.&amp;lt;/code&amp;gt;，说明本地库已经关联了一个名叫&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;origin&amp;lt;/code&amp;gt;的远程库，&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;将代码由本地仓库上传到-gitee-远程仓库&quot;&amp;gt;将代码由本地仓库上传到 gitee 远程仓库&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;执行以下命令，先拉取后推送&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git pull --rebase origin master
+git push -u origin master
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;table&amp;gt;
+  &amp;lt;thead&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;th&amp;gt;&amp;lt;strong&amp;gt;远程仓库指令&amp;lt;/strong&amp;gt;&amp;lt;/th&amp;gt;
+      &amp;lt;th&amp;gt;&amp;lt;strong&amp;gt;描述&amp;lt;/strong&amp;gt;&amp;lt;/th&amp;gt;
+    &amp;lt;/tr&amp;gt;
+  &amp;lt;/thead&amp;gt;
+  &amp;lt;tbody&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git clone [git 地址]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;从远程仓库克隆到本地（当前目录）&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git remote -v&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;查看所有远程仓库，不带参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;-v&amp;lt;/code&amp;gt;只显示名称&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git remote show [remote]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;显示某个远程仓库的信息&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;git remote add [name] [url]&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;增加一个新的远程仓库，并命名&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git remote rename [old] [new]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;修改远程仓库名称&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;git pull [remote] [branch]&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;取回远程仓库的变化，并与本地版本合并&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;git pull&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;同上，针对当前分支&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git fetch [remote]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;获取远程仓库的所有变动到本地仓库，不会自动合并！需要手动合并&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;git push&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;推送当前分支到远程仓库&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git push [remote] [branch]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;推送本地当前分支到远程仓库的指定分支&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git push [remote] –force/-f&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;强行推送当前分支到远程仓库，即使有冲突，⚠️ 很危险！&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git push [remote] –all&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;推送所有分支到远程仓库&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git push –u&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;–u&amp;lt;/code&amp;gt;表示与远程分支建立关联，第一次执行的时候用，后面就不需要了&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git remote rm [remote-name]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;删除远程仓库&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git pull –rebase&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;使用 rebase 的模式进行合并&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+  &amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+
+&amp;lt;h1 id=&quot;错误&quot;&amp;gt;错误&amp;lt;/h1&amp;gt;
+
+&amp;lt;h2 id=&quot;git-init-报错&quot;&amp;gt;git init 报错&amp;lt;/h2&amp;gt;
+
+&amp;lt;p&amp;gt;当我们在一个目录下初始化 git 时 可能会出现这个报错，&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-javascript highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;$&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;init&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;warning&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;templates&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;not&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;found&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;in&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;sr&quot;&amp;gt;/home/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;ja&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;share&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;-&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;core&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;templates&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;Using&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;master&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;as&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;the&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;for&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;the&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;initial&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;This&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;default&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;is&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;subject&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;to&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;change&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;To&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;configure&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;the&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;initial&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;to&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;use&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;in&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;all&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;of&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;your&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;new&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;repositories&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;,&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;which&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;will&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;suppress&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;this&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;warning&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;,&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;call&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;   &amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;config&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;--&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nb&quot;&amp;gt;global&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;init&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;defaultBranch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;&amp;amp;lt;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;&amp;amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;Names&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;commonly&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;chosen&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;instead&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;of&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;master&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;are&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;main&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;,&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;trunk&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;and&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;development&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;The&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;just&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;-&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;created&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;can&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;be&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;renamed&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;via&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;this&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;command&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;   &amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;-&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;m&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;&amp;amp;lt;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;&amp;amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;Initialized&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;empty&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;Git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;repository&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;in&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;sr&quot;&amp;gt;/tmp/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;k&quot;&amp;gt;new&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;sr&quot;&amp;gt;/.git/&amp;lt;/span&amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;解决：&amp;lt;/strong&amp;gt; 执行&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git config --global init.defaultBranch master&amp;lt;/code&amp;gt; 命令，设置默认分支为 master 级别就不会再报错了&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-javascript highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;config&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;--&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nb&quot;&amp;gt;global&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;init&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;defaultBranch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;master&amp;lt;/span&amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;h2 id=&quot;git-add-报错&quot;&amp;gt;git add .报错&amp;lt;/h2&amp;gt;
+
+&amp;lt;p&amp;gt;git add .报错 &amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;warning: adding embedded git repository\:xxxxxxxxxx&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;执行- $ git add .命令时出现出现这个报错&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-bash highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;warning: adding embedded git repository:xxxxxxxxxx
+hint: You&amp;lt;span class=&quot;s1&quot;&amp;gt;&apos;ve added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: git submodule add &amp;amp;lt;url&amp;amp;gt;xxxxxxxxxx
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: git rm --cached   xxxx
+hint:
+hint: See &quot;git help submodule&quot; for more information.
+&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;原因：&amp;lt;/strong&amp;gt; 使用 &amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add .&amp;lt;/code&amp;gt; 时，出现上述错误。是因为在当前 &amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git&amp;lt;/code&amp;gt; 仓库中同时包含有另一个&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git&amp;lt;/code&amp;gt;仓库。如当前仓库目录下的子文件夹内又是一个仓库。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;解决：&amp;lt;/strong&amp;gt; 删除子文件夹的.git 文件， 重新执行&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add .&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;h2 id=&quot;git-remote-add时报错&quot;&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;时报错：&amp;lt;/h2&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote add origin git@gitee.com:liaoxuefeng/learngit.git
+fatal: remote origin already exists.
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;这说明本地库已经关联了一个名叫&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;origin&amp;lt;/code&amp;gt;的远程库，可以用&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote rm &amp;amp;lt;name&amp;amp;gt;&amp;lt;/code&amp;gt;命令已有的远程库。&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote -v
+origin	git@github.com:michaelliao/learngit.git (fetch)
+origin	git@github.com:michaelliao/learngit.git (push)
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;可以看到，本地库已经关联了&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;origin&amp;lt;/code&amp;gt;的远程库，并且，该远程库指向 GitHub。我们可以删除已有的 GitHub 远程库再关联 Gitee 的远程库&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote rm origin
+git remote add origin 仓库地址
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;h2 id=&quot;git-上传报错&quot;&amp;gt;git 上传报错&amp;lt;/h2&amp;gt;
+
+&amp;lt;h3 id=&quot;第一个问题&quot;&amp;gt;第一个问题&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;上传步骤：&amp;lt;br&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add .&amp;lt;/code&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git commit -m &quot;提示消息&quot;&amp;lt;/code&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git push origin master&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;出错：&amp;lt;br&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;! [rejected] master -&amp;amp;gt; master (fetch first) error: failed to push some refs to &apos; 。。。&apos;&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;出现这个问题是因为 github 中的 README.md 文件不在本地代码目录中，可以通过如下命令进行代码合并&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git pull --rebase origin master&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;第二个问题&quot;&amp;gt;第二个问题&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;! [remote rejected] master -&amp;amp;gt; master (pre-receive hook declined)&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;在推送代码时报错如上，网上搜到的方法说是项目的 setting 中 master 是受保护的项目，所以开发者无法推送，解决方法是修改 protected 的设置，或者新建一个分支，推送到自己的分支上&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;a href=&quot;https://www.cnblogs.com/cppeterpan/p/7289266.html&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; class=&quot;extlinks&quot;&amp;gt;解决办法的文章&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;h2 id=&quot;git-push-报错&quot;&amp;gt;git push 报错&amp;lt;/h2&amp;gt;
+
+&amp;lt;p&amp;gt;gitee 第一次提交代码提交不上去，到 push 这一步老是遇到&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-javascript highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;  &amp;lt;span class=&quot;o&quot;&amp;gt;!&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;err&quot;&amp;gt;\&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;[&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;remote&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;rejected&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;err&quot;&amp;gt;\&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;]&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;master&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;-&amp;amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nf&quot;&amp;gt;master &amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;hook&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;declined&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;)&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;error&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;failed&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;to&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;push&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;some&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;refs&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;to&amp;lt;/span&amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;这种情况，老是提不上去。那是因为。你的邮箱设置，&amp;lt;strong&amp;gt;不公开我的邮箱&amp;lt;/strong&amp;gt;把这个勾上了，取消勾选就行了。这样导致找不到你的远程地址。所以推不上去&amp;lt;/p&amp;gt;
+
+                &amp;lt;div class=&quot;post-copyright&quot;&amp;gt;
+                    &amp;lt;p&amp;gt;
+                        &amp;lt;span&amp;gt;版权声明：&amp;lt;/span&amp;gt;
+                        如无特别声明，本文版权归
+                        &amp;lt;a href=&quot;https://h2o-ac.pages.dev&quot; class=&quot;cplink&quot;&amp;gt;Mr Li&amp;lt;/a&amp;gt;
+                        所有，转载请注明本文链接。
+                    &amp;lt;/p&amp;gt;
+                    
+                    &amp;lt;p&amp;gt;
+                        （采用 
+                        &amp;lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot; target=&quot;_blank&quot; class=&quot;extlinks&quot;&amp;gt;CC
+                            BY-NC-SA 4.0&amp;lt;/a&amp;gt;
+                        许可协议进行授权）
+                    &amp;lt;/p&amp;gt;
+                    
+                    &amp;lt;p&amp;gt;&amp;lt;span&amp;gt;本文标题：&amp;lt;/span&amp;gt;《 git总结 》&amp;lt;/p&amp;gt;
+                    &amp;lt;p&amp;gt;&amp;lt;span&amp;gt;本文链接：&amp;lt;/span&amp;gt;&amp;lt;a href=&quot;https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html&quot; class=&quot;cplink&quot;&amp;gt;https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+                    &amp;lt;p class=&quot;tips&quot;&amp;gt;本文最后一次更新为 &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; 天前，文章中的某些内容可能已过时！
+                    &amp;lt;/p&amp;gt;
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/article&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+            &amp;lt;div class=&quot;table-of-contents&quot;&amp;gt;
+                &amp;lt;div class=&quot;toc-header&quot;&amp;gt;&amp;lt;h2&amp;gt;目录&amp;lt;/h2&amp;gt;&amp;lt;/div&amp;gt;
+                &amp;lt;div class=&quot;toc-body&quot;&amp;gt;
+                    &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;总结&apos;)&quot;&amp;gt;总结&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;详细步骤&apos;)&quot;&amp;gt;详细步骤&amp;lt;/a&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;初始化&apos;)&quot;&amp;gt;初始化&amp;lt;/a&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;定位工作目录&apos;)&quot;&amp;gt;定位工作目录&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;初始化用户信息&apos;)&quot;&amp;gt;初始化用户信息&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;创建本地仓库&apos;)&quot;&amp;gt;创建本地仓库&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;暂存区-add&apos;)&quot;&amp;gt;暂存区 add&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;提交-commit-记录&apos;)&quot;&amp;gt;提交 commit-记录&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;将本地代码仓库关联到-gitee-上&amp;lt;code-class=&quot;language-plaintext-highlighter-rouge&quot;&amp;gt;git-remote-add&amp;lt;/code&amp;gt;&apos;)&quot;&amp;gt;将本地代码仓库关联到 gitee 上&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;将代码由本地仓库上传到-gitee-远程仓库&apos;)&quot;&amp;gt;将代码由本地仓库上传到 gitee 远程仓库&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;git-init-报错&apos;)&quot;&amp;gt;git init 报错&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;git-add-.报错&apos;)&quot;&amp;gt;git add .报错&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;&amp;lt;code-class=&quot;language-plaintext-highlighter-rouge&quot;&amp;gt;git-remote-add&amp;lt;/code&amp;gt;时报错&apos;)&quot;&amp;gt;&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;时报错：&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;git-上传报错&apos;)&quot;&amp;gt;git 上传报错&amp;lt;/a&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;第一个问题&apos;)&quot;&amp;gt;第一个问题&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;第二个问题&apos;)&quot;&amp;gt;第二个问题&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;git-push-报错&apos;)&quot;&amp;gt;git push 报错&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;
+                &amp;lt;/div&amp;gt;
+        
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+&amp;lt;div class=&quot;social-share-wrapper&quot;&amp;gt;
+    &amp;lt;div class=&quot;social-share&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/main&amp;gt;
+
+&amp;lt;section class=&quot;author-detail&quot;&amp;gt;
+    &amp;lt;section class=&quot;post-footer-item author-card&quot;&amp;gt;
+        &amp;lt;div class=&quot;avatar&quot;&amp;gt;
+            &amp;lt;img src=&quot;/assets/img/profile.webp&quot; alt=&quot;&quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;author-name&quot; rel=&quot;author&quot;&amp;gt;zhonger&amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;bio&quot;&amp;gt;
+            &amp;lt;p&amp;gt;全栈开发者，热爱前端、运维和架构设计&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+        &amp;lt;ul class=&quot;sns-links&quot;&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://scholar.google.com/citations?user=AUupIooAAAAJ&quot; target=&quot;_blank&quot; aria-label=&quot;google-scholar&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-google-scholar&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://www.researchgate.net/profile/Shengzhou-Li&quot; target=&quot;_blank&quot; aria-label=&quot;researchgate&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-researchgate&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://orcid.org/0000-0001-6973-3825&quot; target=&quot;_blank&quot; aria-label=&quot;ORCID&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-ORCID&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://github.com/zhonger&quot; target=&quot;_blank&quot; aria-label=&quot;github&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-github&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://www.linkedin.com/in/shengzhouli/&quot; target=&quot;_blank&quot; aria-label=&quot;linkedin&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-linkedin&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://segmentfault.com/u/wuwozhonger&quot; target=&quot;_blank&quot; aria-label=&quot;segmentfault&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-segmentfault&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+        &amp;lt;/ul&amp;gt;
+        
+    &amp;lt;/section&amp;gt;
+    &amp;lt;section class=&quot;post-footer-item read-next&quot;&amp;gt;
+        
+        &amp;lt;div class=&quot;read-next-item&quot;&amp;gt;
+            &amp;lt;a href=&quot;/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html&quot; class=&quot;read-next-link&quot; aria-label=&quot;H2O-ac主题设置&quot;&amp;gt;&amp;lt;/a&amp;gt;
+            &amp;lt;section&amp;gt;
+                &amp;lt;span&amp;gt;H2O-ac主题设置&amp;lt;/span&amp;gt;
+                &amp;lt;p&amp;gt;config.yml文件```站点信息，对 SEO 比较重要title: ‘Hin小站’    # 站点名称des...&amp;lt;/p&amp;gt;
+            &amp;lt;/section&amp;gt;
+            
+        &amp;lt;/div&amp;gt;
+        
+
+        
+        &amp;lt;div class=&quot;read-next-item&quot;&amp;gt;
+            &amp;lt;a href=&quot;/test/test-en.html&quot; class=&quot;read-next-link&quot;
+                aria-label=&quot;Test en&quot;&amp;gt;&amp;lt;/a&amp;gt;
+            &amp;lt;section&amp;gt;
+                &amp;lt;span&amp;gt;Test en&amp;lt;/span&amp;gt;
+                &amp;lt;p&amp;gt;Chapter 1&amp;lt;/p&amp;gt;
+            &amp;lt;/section&amp;gt;
+            
+            &amp;lt;div class=&quot;filter&quot;&amp;gt;&amp;lt;/div&amp;gt;
+            &amp;lt;img src=&quot;https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a&quot; alt=&quot;&quot;&amp;gt;
+            
+        &amp;lt;/div&amp;gt;
+        
+    &amp;lt;/section&amp;gt;
+    
+
+
+    
+        
+&amp;lt;section class=&quot;post-footer-item comment&quot;&amp;gt;
+    &amp;lt;div class=&quot;comments-headline&quot;&amp;gt;
+        &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+            &amp;lt;use xlink:href=&quot;#icon-comment&quot;&amp;gt;&amp;lt;/use&amp;gt;
+        &amp;lt;/svg&amp;gt;
+        &amp;lt;span&amp;gt;评论&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+        
+        &amp;lt;div id=&quot;comments-switch&quot;&amp;gt;
+            &amp;lt;span class=&quot;first-comment&quot;&amp;gt;Disqus&amp;lt;/span&amp;gt;
+            &amp;lt;span class=&quot;switch-button&quot;&amp;gt;
+                &amp;lt;input id=&quot;cmn-toggle-4&quot; class=&quot;cmn-toggle cmn-toggle-round-flat&quot; type=&quot;checkbox&quot;&amp;gt;
+                &amp;lt;label for=&quot;cmn-toggle-4&quot;&amp;gt;&amp;lt;/label&amp;gt;
+            &amp;lt;/span&amp;gt;
+            &amp;lt;span class=&quot;second-comment&quot;&amp;gt;Waline&amp;lt;/span&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+    
+&amp;lt;/section&amp;gt;
+
+    
+
+
+
+    
+    &amp;lt;section class=&quot;post-footer-item comment&quot;&amp;gt;
+        &amp;lt;div id=&quot;disqus_thread&quot;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/section&amp;gt;
+    
+    
+    &amp;lt;section class=&quot;post-footer-item comment&quot;&amp;gt;
+        &amp;lt;div id=&quot;waline&quot;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/section&amp;gt;
+    
+
+&amp;lt;/section&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;&apos;
+  types:
+    citation:
+      template: &apos;&amp;lt;div class=&quot;premonition &quot;&amp;gt;
+          &amp;lt;div class=&quot;header&quot;&amp;gt;
+            &amp;lt;svg class=&quot;icon &quot; aria-hidden=&quot;true&quot;&amp;gt;
+                &amp;lt;use xlink:href=&quot;#icon-&quot;&amp;gt;&amp;lt;/use&amp;gt;
+            &amp;lt;/svg&amp;gt;     
+          &amp;lt;/div&amp;gt;
+          &amp;lt;div class=&quot;content&quot;&amp;gt;
+            
+
+
+&amp;lt;div class=&quot;g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover&quot;
+    data-theme=&quot;default&quot;&amp;gt;
+    &amp;lt;div class=&quot;post-wrapper&quot;&amp;gt;
+        &amp;lt;div class=&quot;post-tags&quot;&amp;gt;
+            
+        &amp;lt;/div&amp;gt;
+        &amp;lt;h1&amp;gt;git总结&amp;lt;/h1&amp;gt;
+        &amp;lt;div class=&quot;post-meta&quot;&amp;gt;
+            &amp;lt;span class=&quot;post-meta-item&quot;&amp;gt;
+                &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                    &amp;lt;use xlink:href=&quot;#icon-user&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                &amp;lt;/svg&amp;gt;
+                zhonger
+            &amp;lt;/span&amp;gt;
+            &amp;lt;time class=&quot;post-meta-item&quot; datetime=&quot; 24-10-24&quot;&amp;gt;
+                &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                    &amp;lt;use xlink:href=&quot;#icon-calendar&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                &amp;lt;/svg&amp;gt;
+                &amp;lt;span class=&quot;create-at&quot;&amp;gt;&amp;lt;/span&amp;gt;
+            &amp;lt;/time&amp;gt;
+            &amp;lt;time class=&quot;post-meta-item&quot; datetime=&quot; 24-10-24&quot;&amp;gt;
+                &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                    &amp;lt;use xlink:href=&quot;#icon-update&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                &amp;lt;/svg&amp;gt;
+                &amp;lt;span class=&quot;update-at&quot;&amp;gt;&amp;lt;/span&amp;gt;
+            &amp;lt;/time&amp;gt;
+            &amp;lt;span class=&quot;post-meta-item&quot;&amp;gt;
+                &amp;lt;svg class=&quot;icon words&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                    &amp;lt;use xlink:href=&quot;#icon-words&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                &amp;lt;/svg&amp;gt;
+                
+                本文总共  5.2k  字 &amp;lt;/span&amp;gt;
+                    &amp;lt;span class=&quot;post-meta-item&quot;&amp;gt;
+                        &amp;lt;svg class=&quot;icon time&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                            &amp;lt;use xlink:href=&quot;#icon-time&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                        &amp;lt;/svg&amp;gt;
+                        阅读全文大约需要 15 分钟
+                    &amp;lt;/span&amp;gt;
+                    
+                    &amp;lt;span class=&quot;post-meta-item&quot;&amp;gt;
+                        &amp;lt;svg class=&quot;icon pv&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                            &amp;lt;use xlink:href=&quot;#icon-pv&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                        &amp;lt;/svg&amp;gt;
+                        本文总阅读量 &amp;lt;span id=&quot;busuanzi_value_page_pv&quot;&amp;gt;&amp;lt;/span&amp;gt; 次
+                    &amp;lt;/span&amp;gt;
+                    
+                    
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+&amp;lt;/div&amp;gt;
+
+&amp;lt;main class=&quot;post-content visible&quot;&amp;gt;
+    
+
+    
+
+    &amp;lt;div class=&quot;container&quot;&amp;gt;
+        
+&amp;lt;div class=&quot;submenu hidden&quot;&amp;gt;
+
+&amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;contents&quot;&amp;gt;
+            &amp;lt;article class=&quot;markdown-body post&quot;&amp;gt;
+                
+
+
+                &amp;lt;h2 id=&quot;总结&quot;&amp;gt;总结&amp;lt;/h2&amp;gt;
+
+&amp;lt;div class=&quot;language-javascript highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;init&amp;lt;/span&amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git add .
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git commit -m &quot;提交说明&quot;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote rm origin
+git remote add origin git@gitee.com:mroph/novel.git
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git pull --rebase origin master
+git push -u origin master
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;h2 id=&quot;详细步骤&quot;&amp;gt;详细步骤&amp;lt;/h2&amp;gt;
+
+&amp;lt;h3 id=&quot;初始化&quot;&amp;gt;初始化&amp;lt;/h3&amp;gt;
+
+&amp;lt;h4 id=&quot;定位工作目录&quot;&amp;gt;定位工作目录&amp;lt;/h4&amp;gt;
+
+&amp;lt;p&amp;gt;打开 Git Bash 终端，使用 &amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;cd&amp;lt;/code&amp;gt;命令加上要切换的路径，例如：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;cd /c/Users/username/Documents&amp;lt;/code&amp;gt;；按下回车键，即可切换到指定的路径。需要注意的是路径中需要使用正斜杠 / 分隔路径，而不是反斜杠 \。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;使用&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;pwd&amp;lt;/code&amp;gt;可以显示当前路径&amp;lt;/p&amp;gt;
+
+&amp;lt;h4 id=&quot;初始化用户信息&quot;&amp;gt;初始化用户信息&amp;lt;/h4&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git config --global user.name &apos;better&apos;
+git config --global user.email &apos;1063266220@qq.com&apos;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;h3 id=&quot;创建本地仓库&quot;&amp;gt;创建本地仓库&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;创建本地仓库的方法有两种：&amp;lt;/p&amp;gt;
+
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;一种是创建全新的仓库：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git init&amp;lt;/code&amp;gt;，会在当前目录初始化创建仓库，也可指定目录：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git init [文件目录]&amp;lt;/code&amp;gt;执行命令后，如下显示&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;$ git init
+Initialized empty Git repository in /Users/michael/learngit/.git/
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;创建完多出了一个被隐藏的.git 目录，这就是本地仓库 Git 的工作场所，而且是一个空的仓库（empty Git repository）。没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 Git 仓库给破坏了。&amp;lt;/p&amp;gt;
+
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;另一种是克隆远程仓库：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git clone [url]&amp;lt;/code&amp;gt;
+克隆远程仓库，如在 github 上创建的仓库“&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;https://github.com/kwonganding/KWebNote.git&amp;lt;/code&amp;gt;”&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;$ git clone &apos;https://github.com/kwonganding/KWebNote.git&apos;
+Cloning into &apos;KWebNote&apos;...
+remote: Enumerating objects: 108, done.
+remote: Counting objects: 100% (108/108), done.
+remote: Compressing objects: 100% (60/60), done.
+remote: Total 108 (delta 48), reused 88 (delta 34), pack-reused 0
+Receiving objects: 100% (108/108), 9.36 KiB | 736.00 KiB/s, done.
+Resolving deltas: 100% (48/48), done.
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;会在当前目录下创建“KWebNote”项目目录。&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;暂存区-add&quot;&amp;gt;暂存区 add&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;把工作区变化放到暂存区中，执行命令&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add .&amp;lt;/code&amp;gt;可以一次性把所有变化文件放入暂存区&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;$ git add .
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;执行上面的命令，没有任何显示，说明添加成功。也可以先执行&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git rm --cached &amp;amp;lt;file&amp;amp;gt;&amp;lt;/code&amp;gt;命令将指定的&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;file&amp;lt;/code&amp;gt;从当前的暂存区中删除但保留文件在本地工作目录中。
+| &amp;lt;strong&amp;gt;指令&amp;lt;/strong&amp;gt; | &amp;lt;strong&amp;gt;描述&amp;lt;/strong&amp;gt; |
+| — | — |
+| git add [file1] [file2] | 添加文件到暂存区，包括修改的文件、新增的文件 |
+| git add [dir] | 同上，添加目录到暂存区，包括子目录 |
+| git add . | 同上，添加&amp;lt;strong&amp;gt;所有&amp;lt;/strong&amp;gt;修改、新增文件（未跟踪）到暂存区 |
+| git rm [file] | 删除工作区文件，并且将这次删除放入暂存区 |
+|git rm –cached [file]|删除放入暂存区 ，但该文件会保留在工作区|&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;提交-commit-记录&quot;&amp;gt;提交 commit-记录&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;把暂存区内容提交到版本库，命令如下（此处文字说明可以不加引号）&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git commit -m &apos;提交的内容说明&apos;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;执行上面的命令，如下显示&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;$ git commit -m &quot;wrote a readme file&quot;
+[master (root-commit) eaadf4e] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git commit&amp;lt;/code&amp;gt;命令执行成功后会告诉你，&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;1 file changed&amp;lt;/code&amp;gt;：1 个文件被改动（我们新添加的 readme.txt 文件）；&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;2 insertions&amp;lt;/code&amp;gt;：插入了两行内容（readme.txt 有两行内容）。
+以上命令相当于存档了一次，在版本库中产生一次提交记录并生成版本号。本次存档，不耽误我们在工作区 (项目文件夹) 下继续编写项目&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;如果改的代码过多，忘记改过哪些了，可以运行&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git status&amp;lt;/code&amp;gt;命令来查看 git 仓库变化，只能看未提交的所有变更的文件状态
+| &amp;lt;strong&amp;gt;指令&amp;lt;/strong&amp;gt; | &amp;lt;strong&amp;gt;描述&amp;lt;/strong&amp;gt; |
+| — | — |
+| git commit -m ‘说明’ | 提交变更，参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;-m&amp;lt;/code&amp;gt;设置提交的描述信息，应该正确提交，不带该参数会进入说明编辑模式 |
+| git commit -a | 参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;-a&amp;lt;/code&amp;gt;，表示直接从工作区提交到版本库，略过了&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add&amp;lt;/code&amp;gt;步骤，不包括新增的文件 |
+| git commit [file] | 提交暂存区的指定文件到仓库区 |
+| git commit –amend -m | 使用一次新的&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;commit&amp;lt;/code&amp;gt;，替代上一次提交，会修改&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;commit&amp;lt;/code&amp;gt;的&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;hash&amp;lt;/code&amp;gt;值（id） |
+| git &amp;lt;strong&amp;gt;reflog&amp;lt;/strong&amp;gt; | 查看所有可用的历史版本记录（实际是 HEAD 变更记录），包含被回退的记录（&amp;lt;strong&amp;gt;重要&amp;lt;/strong&amp;gt;） |
+| git status | 查看本地仓库状态，比较常用的指令，加参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;-s&amp;lt;/code&amp;gt;简洁模式 |&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;将本地代码仓库关联到-gitee-上git-remote-add&quot;&amp;gt;将本地代码仓库关联到 gitee 上&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;第一次提交直接执行以下命令关联&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt; git remote add origin 仓库地址
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;此后，每次本地提交后，只要有必要，就可以使用命令&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git push origin master&amp;lt;/code&amp;gt;推送最新修改；&amp;lt;/p&amp;gt;
+
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;第二次提交先删除，再关联&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote rm origin
+git remote add origin 仓库地址
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;否则会在使用命令&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;时报错：&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;fatal: remote origin already exists.&amp;lt;/code&amp;gt;，说明本地库已经关联了一个名叫&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;origin&amp;lt;/code&amp;gt;的远程库，&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;将代码由本地仓库上传到-gitee-远程仓库&quot;&amp;gt;将代码由本地仓库上传到 gitee 远程仓库&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;执行以下命令，先拉取后推送&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git pull --rebase origin master
+git push -u origin master
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;table&amp;gt;
+  &amp;lt;thead&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;th&amp;gt;&amp;lt;strong&amp;gt;远程仓库指令&amp;lt;/strong&amp;gt;&amp;lt;/th&amp;gt;
+      &amp;lt;th&amp;gt;&amp;lt;strong&amp;gt;描述&amp;lt;/strong&amp;gt;&amp;lt;/th&amp;gt;
+    &amp;lt;/tr&amp;gt;
+  &amp;lt;/thead&amp;gt;
+  &amp;lt;tbody&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git clone [git 地址]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;从远程仓库克隆到本地（当前目录）&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git remote -v&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;查看所有远程仓库，不带参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;-v&amp;lt;/code&amp;gt;只显示名称&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git remote show [remote]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;显示某个远程仓库的信息&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;git remote add [name] [url]&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;增加一个新的远程仓库，并命名&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git remote rename [old] [new]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;修改远程仓库名称&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;git pull [remote] [branch]&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;取回远程仓库的变化，并与本地版本合并&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;git pull&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;同上，针对当前分支&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git fetch [remote]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;获取远程仓库的所有变动到本地仓库，不会自动合并！需要手动合并&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;git push&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;推送当前分支到远程仓库&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git push [remote] [branch]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;推送本地当前分支到远程仓库的指定分支&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git push [remote] –force/-f&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;强行推送当前分支到远程仓库，即使有冲突，⚠️ 很危险！&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git push [remote] –all&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;推送所有分支到远程仓库&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git push –u&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;参数&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;–u&amp;lt;/code&amp;gt;表示与远程分支建立关联，第一次执行的时候用，后面就不需要了&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git remote rm [remote-name]&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;删除远程仓库&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;git pull –rebase&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;使用 rebase 的模式进行合并&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+  &amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+
+&amp;lt;h1 id=&quot;错误&quot;&amp;gt;错误&amp;lt;/h1&amp;gt;
+
+&amp;lt;h2 id=&quot;git-init-报错&quot;&amp;gt;git init 报错&amp;lt;/h2&amp;gt;
+
+&amp;lt;p&amp;gt;当我们在一个目录下初始化 git 时 可能会出现这个报错，&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-javascript highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;$&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;init&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;warning&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;templates&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;not&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;found&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;in&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;sr&quot;&amp;gt;/home/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;ja&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;share&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;-&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;core&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;templates&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;Using&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;master&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;as&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;the&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;for&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;the&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;initial&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;This&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;default&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;is&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;subject&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;to&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;change&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;To&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;configure&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;the&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;initial&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;to&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;use&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;in&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;all&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;of&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;your&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;new&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;repositories&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;,&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;which&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;will&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;suppress&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;this&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;warning&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;,&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;call&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;   &amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;config&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;--&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nb&quot;&amp;gt;global&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;init&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;defaultBranch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;&amp;amp;lt;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;&amp;amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;Names&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;commonly&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;chosen&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;instead&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;of&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;master&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;are&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;main&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;,&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;trunk&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;and&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;s1&quot;&amp;gt;development&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;dl&quot;&amp;gt;&apos;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;The&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;just&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;-&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;created&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;can&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;be&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;renamed&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;via&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;this&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;command&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;hint&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt;   &amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;branch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;-&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;m&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;&amp;amp;lt;&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;name&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;o&quot;&amp;gt;&amp;amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;Initialized&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;empty&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;Git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;repository&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;k&quot;&amp;gt;in&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;sr&quot;&amp;gt;/tmp/&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;k&quot;&amp;gt;new&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;sr&quot;&amp;gt;/.git/&amp;lt;/span&amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;解决：&amp;lt;/strong&amp;gt; 执行&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git config --global init.defaultBranch master&amp;lt;/code&amp;gt; 命令，设置默认分支为 master 级别就不会再报错了&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-javascript highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;git&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;config&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;--&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nb&quot;&amp;gt;global&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;init&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;defaultBranch&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;master&amp;lt;/span&amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;h2 id=&quot;git-add-报错&quot;&amp;gt;git add .报错&amp;lt;/h2&amp;gt;
+
+&amp;lt;p&amp;gt;git add .报错 &amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;warning: adding embedded git repository\:xxxxxxxxxx&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;执行- $ git add .命令时出现出现这个报错&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-bash highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;warning: adding embedded git repository:xxxxxxxxxx
+hint: You&amp;lt;span class=&quot;s1&quot;&amp;gt;&apos;ve added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: git submodule add &amp;amp;lt;url&amp;amp;gt;xxxxxxxxxx
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: git rm --cached   xxxx
+hint:
+hint: See &quot;git help submodule&quot; for more information.
+&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;原因：&amp;lt;/strong&amp;gt; 使用 &amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add .&amp;lt;/code&amp;gt; 时，出现上述错误。是因为在当前 &amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git&amp;lt;/code&amp;gt; 仓库中同时包含有另一个&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git&amp;lt;/code&amp;gt;仓库。如当前仓库目录下的子文件夹内又是一个仓库。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;解决：&amp;lt;/strong&amp;gt; 删除子文件夹的.git 文件， 重新执行&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add .&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;h2 id=&quot;git-remote-add时报错&quot;&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;时报错：&amp;lt;/h2&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote add origin git@gitee.com:liaoxuefeng/learngit.git
+fatal: remote origin already exists.
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;这说明本地库已经关联了一个名叫&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;origin&amp;lt;/code&amp;gt;的远程库，可以用&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote rm &amp;amp;lt;name&amp;amp;gt;&amp;lt;/code&amp;gt;命令已有的远程库。&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote -v
+origin	git@github.com:michaelliao/learngit.git (fetch)
+origin	git@github.com:michaelliao/learngit.git (push)
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;可以看到，本地库已经关联了&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;origin&amp;lt;/code&amp;gt;的远程库，并且，该远程库指向 GitHub。我们可以删除已有的 GitHub 远程库再关联 Gitee 的远程库&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;git remote rm origin
+git remote add origin 仓库地址
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;h2 id=&quot;git-上传报错&quot;&amp;gt;git 上传报错&amp;lt;/h2&amp;gt;
+
+&amp;lt;h3 id=&quot;第一个问题&quot;&amp;gt;第一个问题&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;上传步骤：&amp;lt;br&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git add .&amp;lt;/code&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git commit -m &quot;提示消息&quot;&amp;lt;/code&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git push origin master&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;出错：&amp;lt;br&amp;gt;
+&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;! [rejected] master -&amp;amp;gt; master (fetch first) error: failed to push some refs to &apos; 。。。&apos;&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;出现这个问题是因为 github 中的 README.md 文件不在本地代码目录中，可以通过如下命令进行代码合并&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git pull --rebase origin master&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;h3 id=&quot;第二个问题&quot;&amp;gt;第二个问题&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;! [remote rejected] master -&amp;amp;gt; master (pre-receive hook declined)&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;在推送代码时报错如上，网上搜到的方法说是项目的 setting 中 master 是受保护的项目，所以开发者无法推送，解决方法是修改 protected 的设置，或者新建一个分支，推送到自己的分支上&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;a href=&quot;https://www.cnblogs.com/cppeterpan/p/7289266.html&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; class=&quot;extlinks&quot;&amp;gt;解决办法的文章&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;h2 id=&quot;git-push-报错&quot;&amp;gt;git push 报错&amp;lt;/h2&amp;gt;
+
+&amp;lt;p&amp;gt;gitee 第一次提交代码提交不上去，到 push 这一步老是遇到&amp;lt;/p&amp;gt;
+
+&amp;lt;div class=&quot;language-javascript highlighter-rouge&quot;&amp;gt;&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre class=&quot;highlight&quot;&amp;gt;&amp;lt;code&amp;gt;  &amp;lt;span class=&quot;o&quot;&amp;gt;!&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;err&quot;&amp;gt;\&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;[&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;remote&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;rejected&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;err&quot;&amp;gt;\&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;]&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;master&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;o&quot;&amp;gt;-&amp;amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nf&quot;&amp;gt;master &amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;nx&quot;&amp;gt;hook&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;declined&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;)&amp;lt;/span&amp;gt;
+&amp;lt;span class=&quot;nx&quot;&amp;gt;error&amp;lt;/span&amp;gt;&amp;lt;span class=&quot;p&quot;&amp;gt;:&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;failed&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;to&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;push&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;some&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;refs&amp;lt;/span&amp;gt; &amp;lt;span class=&quot;nx&quot;&amp;gt;to&amp;lt;/span&amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;p&amp;gt;这种情况，老是提不上去。那是因为。你的邮箱设置，&amp;lt;strong&amp;gt;不公开我的邮箱&amp;lt;/strong&amp;gt;把这个勾上了，取消勾选就行了。这样导致找不到你的远程地址。所以推不上去&amp;lt;/p&amp;gt;
+
+                &amp;lt;div class=&quot;post-copyright&quot;&amp;gt;
+                    &amp;lt;p&amp;gt;
+                        &amp;lt;span&amp;gt;版权声明：&amp;lt;/span&amp;gt;
+                        如无特别声明，本文版权归
+                        &amp;lt;a href=&quot;https://h2o-ac.pages.dev&quot; class=&quot;cplink&quot;&amp;gt;Mr Li&amp;lt;/a&amp;gt;
+                        所有，转载请注明本文链接。
+                    &amp;lt;/p&amp;gt;
+                    
+                    &amp;lt;p&amp;gt;
+                        （采用 
+                        &amp;lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot; target=&quot;_blank&quot; class=&quot;extlinks&quot;&amp;gt;CC
+                            BY-NC-SA 4.0&amp;lt;/a&amp;gt;
+                        许可协议进行授权）
+                    &amp;lt;/p&amp;gt;
+                    
+                    &amp;lt;p&amp;gt;&amp;lt;span&amp;gt;本文标题：&amp;lt;/span&amp;gt;《 git总结 》&amp;lt;/p&amp;gt;
+                    &amp;lt;p&amp;gt;&amp;lt;span&amp;gt;本文链接：&amp;lt;/span&amp;gt;&amp;lt;a href=&quot;https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html&quot; class=&quot;cplink&quot;&amp;gt;https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+                    &amp;lt;p class=&quot;tips&quot;&amp;gt;本文最后一次更新为 &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; 天前，文章中的某些内容可能已过时！
+                    &amp;lt;/p&amp;gt;
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/article&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+            &amp;lt;div class=&quot;table-of-contents&quot;&amp;gt;
+                &amp;lt;div class=&quot;toc-header&quot;&amp;gt;&amp;lt;h2&amp;gt;目录&amp;lt;/h2&amp;gt;&amp;lt;/div&amp;gt;
+                &amp;lt;div class=&quot;toc-body&quot;&amp;gt;
+                    &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;总结&apos;)&quot;&amp;gt;总结&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;详细步骤&apos;)&quot;&amp;gt;详细步骤&amp;lt;/a&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;初始化&apos;)&quot;&amp;gt;初始化&amp;lt;/a&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;定位工作目录&apos;)&quot;&amp;gt;定位工作目录&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;初始化用户信息&apos;)&quot;&amp;gt;初始化用户信息&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;创建本地仓库&apos;)&quot;&amp;gt;创建本地仓库&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;暂存区-add&apos;)&quot;&amp;gt;暂存区 add&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;提交-commit-记录&apos;)&quot;&amp;gt;提交 commit-记录&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;将本地代码仓库关联到-gitee-上&amp;lt;code-class=&quot;language-plaintext-highlighter-rouge&quot;&amp;gt;git-remote-add&amp;lt;/code&amp;gt;&apos;)&quot;&amp;gt;将本地代码仓库关联到 gitee 上&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;将代码由本地仓库上传到-gitee-远程仓库&apos;)&quot;&amp;gt;将代码由本地仓库上传到 gitee 远程仓库&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;git-init-报错&apos;)&quot;&amp;gt;git init 报错&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;git-add-.报错&apos;)&quot;&amp;gt;git add .报错&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;&amp;lt;code-class=&quot;language-plaintext-highlighter-rouge&quot;&amp;gt;git-remote-add&amp;lt;/code&amp;gt;时报错&apos;)&quot;&amp;gt;&amp;lt;code class=&quot;language-plaintext highlighter-rouge&quot;&amp;gt;git remote add&amp;lt;/code&amp;gt;时报错：&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;git-上传报错&apos;)&quot;&amp;gt;git 上传报错&amp;lt;/a&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;第一个问题&apos;)&quot;&amp;gt;第一个问题&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;第二个问题&apos;)&quot;&amp;gt;第二个问题&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;a onclick=&quot;scrollToAdjust(&apos;git-push-报错&apos;)&quot;&amp;gt;git push 报错&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;
+                &amp;lt;/div&amp;gt;
+        
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+&amp;lt;div class=&quot;social-share-wrapper&quot;&amp;gt;
+    &amp;lt;div class=&quot;social-share&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/main&amp;gt;
+
+&amp;lt;section class=&quot;author-detail&quot;&amp;gt;
+    &amp;lt;section class=&quot;post-footer-item author-card&quot;&amp;gt;
+        &amp;lt;div class=&quot;avatar&quot;&amp;gt;
+            &amp;lt;img src=&quot;/assets/img/profile.webp&quot; alt=&quot;&quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;author-name&quot; rel=&quot;author&quot;&amp;gt;zhonger&amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;bio&quot;&amp;gt;
+            &amp;lt;p&amp;gt;全栈开发者，热爱前端、运维和架构设计&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+        &amp;lt;ul class=&quot;sns-links&quot;&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://scholar.google.com/citations?user=AUupIooAAAAJ&quot; target=&quot;_blank&quot; aria-label=&quot;google-scholar&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-google-scholar&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://www.researchgate.net/profile/Shengzhou-Li&quot; target=&quot;_blank&quot; aria-label=&quot;researchgate&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-researchgate&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://orcid.org/0000-0001-6973-3825&quot; target=&quot;_blank&quot; aria-label=&quot;ORCID&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-ORCID&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://github.com/zhonger&quot; target=&quot;_blank&quot; aria-label=&quot;github&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-github&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://www.linkedin.com/in/shengzhouli/&quot; target=&quot;_blank&quot; aria-label=&quot;linkedin&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-linkedin&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+            &amp;lt;li&amp;gt;
+                &amp;lt;a href=&quot;https://segmentfault.com/u/wuwozhonger&quot; target=&quot;_blank&quot; aria-label=&quot;segmentfault&quot;&amp;gt;
+                    &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+                        &amp;lt;use xlink:href=&quot;#icon-segmentfault&quot;&amp;gt;&amp;lt;/use&amp;gt;
+                    &amp;lt;/svg&amp;gt;
+                &amp;lt;/a&amp;gt;
+            &amp;lt;/li&amp;gt;
+            
+        &amp;lt;/ul&amp;gt;
+        
+    &amp;lt;/section&amp;gt;
+    &amp;lt;section class=&quot;post-footer-item read-next&quot;&amp;gt;
+        
+        &amp;lt;div class=&quot;read-next-item&quot;&amp;gt;
+            &amp;lt;a href=&quot;/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html&quot; class=&quot;read-next-link&quot; aria-label=&quot;H2O-ac主题设置&quot;&amp;gt;&amp;lt;/a&amp;gt;
+            &amp;lt;section&amp;gt;
+                &amp;lt;span&amp;gt;H2O-ac主题设置&amp;lt;/span&amp;gt;
+                &amp;lt;p&amp;gt;config.yml文件```站点信息，对 SEO 比较重要title: ‘Hin小站’    # 站点名称des...&amp;lt;/p&amp;gt;
+            &amp;lt;/section&amp;gt;
+            
+        &amp;lt;/div&amp;gt;
+        
+
+        
+        &amp;lt;div class=&quot;read-next-item&quot;&amp;gt;
+            &amp;lt;a href=&quot;/test/test-en.html&quot; class=&quot;read-next-link&quot;
+                aria-label=&quot;Test en&quot;&amp;gt;&amp;lt;/a&amp;gt;
+            &amp;lt;section&amp;gt;
+                &amp;lt;span&amp;gt;Test en&amp;lt;/span&amp;gt;
+                &amp;lt;p&amp;gt;Chapter 1&amp;lt;/p&amp;gt;
+            &amp;lt;/section&amp;gt;
+            
+            &amp;lt;div class=&quot;filter&quot;&amp;gt;&amp;lt;/div&amp;gt;
+            &amp;lt;img src=&quot;https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a&quot; alt=&quot;&quot;&amp;gt;
+            
+        &amp;lt;/div&amp;gt;
+        
+    &amp;lt;/section&amp;gt;
+    
+
+
+    
+        
+&amp;lt;section class=&quot;post-footer-item comment&quot;&amp;gt;
+    &amp;lt;div class=&quot;comments-headline&quot;&amp;gt;
+        &amp;lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&amp;gt;
+            &amp;lt;use xlink:href=&quot;#icon-comment&quot;&amp;gt;&amp;lt;/use&amp;gt;
+        &amp;lt;/svg&amp;gt;
+        &amp;lt;span&amp;gt;评论&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+        
+        &amp;lt;div id=&quot;comments-switch&quot;&amp;gt;
+            &amp;lt;span class=&quot;first-comment&quot;&amp;gt;Disqus&amp;lt;/span&amp;gt;
+            &amp;lt;span class=&quot;switch-button&quot;&amp;gt;
+                &amp;lt;input id=&quot;cmn-toggle-4&quot; class=&quot;cmn-toggle cmn-toggle-round-flat&quot; type=&quot;checkbox&quot;&amp;gt;
+                &amp;lt;label for=&quot;cmn-toggle-4&quot;&amp;gt;&amp;lt;/label&amp;gt;
+            &amp;lt;/span&amp;gt;
+            &amp;lt;span class=&quot;second-comment&quot;&amp;gt;Waline&amp;lt;/span&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+    
+&amp;lt;/section&amp;gt;
+
+    
+
+
+
+    
+    &amp;lt;section class=&quot;post-footer-item comment&quot;&amp;gt;
+        &amp;lt;div id=&quot;disqus_thread&quot;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/section&amp;gt;
+    
+    
+    &amp;lt;section class=&quot;post-footer-item comment&quot;&amp;gt;
+        &amp;lt;div id=&quot;waline&quot;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/section&amp;gt;
+    
+
+&amp;lt;/section&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+        &amp;lt;/div&amp;gt;&apos;
+      default_title: &apos;&apos;
+    note:
+      default_title: &apos;Note&apos;
+    info:
+      default_title: &apos;Info&apos;
+    warning:
+      default_title: &apos;Warning&apos;
+    error:
+      default_title: &apos;Error&apos;
+plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-sitemap, premonition, h2o-ac-jekyll-extlinks]
+exclude: [&apos;node_modules&apos;, &apos;dev&apos;, &apos;package.json&apos;, &apos;webpack.config.js&apos;, &apos;.gitignore&apos;, &apos;README.md&apos;, &apos;*.gemspec&apos;, &apos;*.gem&apos;]
+
+#### 功能区
+webpusher: &apos;{GIVEN WEBPUSHER ID}&apos;  # 动态消息、通知推送，定义时自动开启。
+##### PWA，渐进式网站应用
+# pwa:
+#   color: &apos;#81BBFF&apos;      # 主题色
+#   short_name: &apos;h2o-ac&apos;  # 应用缩写或应用名
+##### 搜索功能
+search: true    # 是否启用搜索
+search_type: docsearch   # 默认为 default 即简单搜索，自 v1.3.2 后可用 DocSearch 搜索。
+docsearch:                     # DocSearch 搜索配置节
+  appId: &apos;{GIVEN APPID}&apos;       # 获取的应用 ID
+  apiKey: &apos;{GIVEN API KEY}&apos;    # 获取的应用 Key
+  indexName: &apos;indexName&apos;       # 获取的索引空间名
+#### 评论功能
+comments:
+#   disqus: false   # 是否开启 Disqus 评论
+#   disqus_url: &apos;https://h2o-ac.disqus.com/embed.js&apos;  # Disqus 链接
+#   waline: false   # 是否开启 Waline 评论
+#   waline_url: &apos;https://h2o-ac-waline.deta.dev/&apos;     # Waline 链接
+#   waline_reaction: false  # 是否开启 Waline 表情反馈，以下为自定义本地化配置。
+#   waline_locale: &quot;{reaction0: &apos;赞一个&apos;, reaction1: &apos;踩一下&apos;, reaction2: &apos;有点酷&apos;, reaction3: &apos;看不懂&apos;, reaction4: &apos;啥玩意&apos;, reaction5: &apos;想睡觉&apos;}&quot;
+#### 站点统计功能
+# cnzz:  &apos;111111111&apos;                   # CNZZ 站长统计
+# busuanzi: false                       # Busuanzi 不蒜子统计
+# google_analytics: &apos;UA-111111111-1&apos;   # 谷歌统计分析
+# google_search: &apos;{GIVEN LONG STRING}&apos; # 谷歌搜索验证所有权
+# umami:                               # Umami 统计
+#   status: true
+#   id: &apos;{Umami ID}&apos;
+#   js: &apos;https://umami.jekyll-theme-h2o-ac.com/umami.js&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
+        <link>https://h2o-ac.pages.dev/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html</link>
+        <guid isPermaLink="true">https://h2o-ac.pages.dev/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html</guid>
+        
+        <category>H2O-ac主题</category>
+        
+        
+      </item>
     
       <item>
         <title>git总结</title>
@@ -329,18 +1628,6 @@ git remote add origin 仓库地址
         <pubDate>Thu, 24 Oct 2024 05:20:39 +0000</pubDate>
         <link>https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html</link>
         <guid isPermaLink="true">https://h2o-ac.pages.dev/git%E6%80%BB%E7%BB%93.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>主题设置</title>
-        <description>&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Thu, 24 Oct 2024 00:00:00 +0000</pubDate>
-        <link>https://h2o-ac.pages.dev/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html</link>
-        <guid isPermaLink="true">https://h2o-ac.pages.dev/%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE.html</guid>
         
         
       </item>
